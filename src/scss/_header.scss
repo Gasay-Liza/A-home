@@ -1,7 +1,9 @@
 .header {
-  padding: 0 7rem;
+  position: fixed;
+  top: 30px;
   width: 100%;
   max-width: 188rem;
+  padding: 0 7rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,13 +42,14 @@
   }
 
   &__number {
-    //текстcolor: $black;
+    //текст
+    color: $black;
     font-family: $avanti;
     font-size: 1.6rem;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    //кнопкаdisplay: flex;
+    //кнопка
     display: flex;
     height: 5.6rem;
     padding: 1.6rem 3.2rem;
@@ -55,5 +58,18 @@
     border-radius: 100px;
     background: $white;
     border-radius: 10rem;
-}
+  }
+
+  &__text {
+    color: $white;
+    font-family: $avanti;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__call {
+
+  }
 }

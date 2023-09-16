@@ -1,9 +1,215 @@
 .first-screen {
+  margin:  0 0;
+  padding: 3rem 7rem 5.5rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   max-width: 188rem;
   height: 99.6rem;
-  background-color: gray;
+  //   background-image: url("../utils/img/wrapper-img.webp");
+  border-radius: 4rem;
+  background: linear-gradient(
+      0deg,
+      rgba(18, 26, 43, 0.24) 0%,
+      rgba(18, 26, 43, 0.24) 100%
+    ),
+    url("../utils/img/wrapper-img.webp"),
+    lightgray -131.778px -106px / 111.466% 118.348% no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__middle-block {
+    width: 100%;
+    max-width: 126.4rem;
+    margin-top: 17.8rem;
+    margin-left: 29.8rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__btn-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15.3683rem;
+    height: 15.3206rem;
+  }
+  &__btn-container::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    width: 15.3683rem;
+    height: 15.3206rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../utils/img/btn-with-text.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: rotate 10s linear infinite;
+    animation-name: rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg); /* начальное положение */
+      }
+      to {
+        transform: rotate(360deg); /* конечное положение */
+      }
+    }
+  }
+
+  &__btn {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: $white;
+    border-radius: 50%;
+
+    > svg {
+      width: 1.2rem;
+      height: 2rem;
+      transition: transform 0.3s ease;
+
+      path {
+        fill: #131313;
+      }
+    }
+
+    &:hover {
+      > svg {
+        transform: translate(0.3rem, -0.4rem);
+      }
+    }
+  }
+
+  &__text {
+    margin-left: 13.532rem;
+    width: 100%;
+    max-width: 49.7rem;
+    color: $white;
+    font-family: $avanti;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__call-btn {
+    padding: 0 0;
+    margin-left: 24.4rem;
+    display: flex;
+    width: 23.4rem;
+    height: 5.8rem;
+    padding: 0.05rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__call-icon {
+    display: flex;
+    padding: 1.8rem 0 0 1.8rem;
+    width: 6.6rem;
+    height: 5.7rem;
+    background-image: url(../utils/img/btn-call-wrapper.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    > svg {
+      width: 2.2rem;
+      height: 2.2rem;
+      transition: transform 0.3s ease;
+
+      path {
+        fill: $l-green;
+      }
+    }
+
+    &:hover {
+      > svg {
+        transform: rotate(30deg);
+      }
+    }
+  }
+
+  &__call-frame {
+    display: flex;
+    box-sizing: border-box;
+    width: 16.9rem;
+    height: 5.6rem;
+    padding: 1.7rem 1.6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+    border-radius: 10rem;
+    background: $white;
+    // текст
+    color: $black;
+    font-family: $avanti;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__bottom-block {
+  }
+
+  &__title {
+    margin-top: 26rem;
+    display: flex;
+    text-wrap: nowrap;
+    width: 100%;
+    max-width: 118.7rem;
+    position: relative;
+    color: $white;
+    text-align: center;
+    font-family: $drukcyr;
+    font-size: 23rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23rem;
+    text-transform: uppercase;
+  }
+
+  &__title::after {
+    position: absolute;
+    width: 18.9rem;
+    content: "есть ипотека";
+    bottom: 16.888rem;
+    right: 9.78rem;
+    //текст
+    color: $white;
+    font-family: $avanti;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    //обертка
+    border-radius: 10rem;
+    background: $l-green;
+    display: inline-flex;
+    transform: rotate(-10.346deg);
+    padding: 0.8rem 2rem 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+  &__container {
+  }
+  &__call {
+  }
 }
