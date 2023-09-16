@@ -1,0 +1,59 @@
+.header {
+  padding: 0 7rem;
+  width: 100%;
+  max-width: 188rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+
+  &__logo-link {
+    width: 24.1rem;
+    height: 9rem;
+  }
+
+  &__logo {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__nav-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6.4rem;
+  }
+
+  &__nav-list-link {
+    color: $white;
+    font-family: $avanti;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+  }
+
+  &__number {
+    //текстcolor: $black;
+    font-family: $avanti;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    //кнопкаdisplay: flex;
+    display: flex;
+    height: 5.6rem;
+    padding: 1.6rem 3.2rem;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 100px;
+    background: $white;
+    border-radius: 10rem;
+}
+}

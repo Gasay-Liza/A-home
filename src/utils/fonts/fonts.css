@@ -1,11 +1,14 @@
 @font-face {
-    font-family: 'Avanti Serif';
-    src: local('Avanti Serif'), local('DrukCyr-Bold'),
-        url('Avanti Serif.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
+	font-family: "Avanti";
+	src: url("avanti-bold.eot"); 
+	src: url("avanti-bold.eot?#iefix") format("embedded-opentype"),
+		url("avanti-bold.otf") format("opentype"), 
+		url("avanti-bold.ttf") format("truetype"),
+		url("avanti-bold.woff") format("woff"), 
+		url("avanti-bold.woff2") format("woff2"); 
+	font-weight: 700;
+	font-style: normal;
 }
-
 
 @font-face {
     font-family: 'Druk Cyr';

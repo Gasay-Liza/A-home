@@ -1,14 +1,23 @@
+
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const mode = process.env.NODE_ENV === "development";
+const devMode = mode === "development";
+const target = devMode ? "web" : "browserslist";
+const devtool = devMode ? "source-map" : undefined;
+
 module.exports = {
-  entry: { main: "./src/index.js" },
+  mode,
+  target,
+  devtool,
+  entry: path.resolve(__dirname, "src", "index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js",
-    publicPath: "",
-    assetsModuleFilename: "assets/images/[name].[hash:8].[ext]",
+    publicPath: "/",
+    assetModuleFilename: "utils/img/[name].[hash:8][ext]",
+    clean: true,
   },
   performance: {
     maxAssetSize: 512000,
@@ -24,37 +33,49 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.html$/i,
+        use: "html-loader",
+      },
+      {
+        test: /\.js$/i,
         use: "babel-loader",
         exclude: "/node_modules/",
       },
       // добавили правило для обработки файлов
       {
+        test: /\.(woff(2)?|eot|ttf|otf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "utils/fonts/[name][ext]",
+        },
+      },
+      {
         // регулярное выражение, которое ищет все файлы с такими расширениями
-        test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/i,
+        test: /\.(png|svg|jpg|gif)$/i,
         type: "asset/resource",
       },
       {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.css$/,
+        test: /\.(c|sa|sc|)ss$/i,
         use: [
-          MiniCssExtractPlugin.loader,
+          mode ? "style-loader" : MiniCssExtractPlugin.loader,
+          "css-loader",
           {
-            loader: "css-loader",
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [require("postcss-preset-env")],
+              },
+            },
           },
-          "postcss-loader",
+          "sass-loader",
         ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html",
+      template: path.resolve(__dirname, "src", "index.html"),
     }),
-    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
   ],
 };
