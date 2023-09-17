@@ -1,4 +1,5 @@
 .advantages {
+  width: 100%;
   &__blocks {
     padding: 9rem 9rem;
     display: grid;
@@ -7,83 +8,90 @@
     grid-auto-rows: 43rem;
     gap: 3rem;
 
-
-    &:not(:first-child){
-        &:hover{
-            background-image: none;
-            background-color: $l-green;
-        }
+    &:not(:first-child) {
+      &:hover {
+        background-image: none;
+        background-color: $l-green;
+      }
     }
-    
   }
 
   &__block {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 5rem 5rem;
-    justify-content: space-between;
-    align-items: flex-start;
+    position: relative;
     border-radius: 4rem;
-    transition: all 1s ease;
-    
-    &:active{
-        background-image: none;
-        background-color: $l-green;
+    transition: all 0.5s ease;
+
+    > img {
+      z-index: -100;
+      position: absolute;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      border-radius: 4rem;
     }
 
-    &:hover{
-        &:not(:first-of-type){
-            cursor: pointer;
-            &:hover{
-                background-image: none;
-                background-color: $l-green;
-            }
-            
+    &:active {
+      background-image: none;
+      background-color: $l-green;
+    }
+
+    &:hover {
+      &:not(:first-of-type) {
+        cursor: pointer;
+        &:hover {
+          background-image: none;
+          background-color: $l-green;
         }
+      }
     }
 
-    &:first-of-type{
-        background-color: $grey;
-        justify-content: flex-start;
-        gap: 4rem;
-        grid-column: 1 / span 2;
+    &:first-of-type {
+      background-color: $grey;
+      justify-content: flex-start;
+      gap: 4rem;
+      grid-column: 1 / span 2;
     }
 
-    &:nth-of-type(2){
-        background: linear-gradient(0deg, rgba(18, 26, 43, 0.24) 0%, rgba(18, 26, 43, 0.24) 100%), url(../utils/img/img-home-1.webp), lightgray 50%;
-        grid-column: 3 / span 2;
-        background-position: 50% 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
+    &:nth-of-type(2) {
+      grid-column: 3 / span 2;
     }
 
-    &:nth-of-type(3){
-        background: linear-gradient(0deg, rgba(18, 26, 43, 0.24) 0%, rgba(18, 26, 43, 0.24) 100%), url(../utils/img/img-home-3.webp), lightgray 50%;
-        grid-column: 1 / span 2;
-        background-position: 50% 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
+    &:nth-of-type(3) {
+      grid-column: 1 / span 2;
     }
 
-    &:nth-of-type(4){
-        background: linear-gradient(0deg, rgba(18, 26, 43, 0.24) 0%, rgba(18, 26, 43, 0.24) 100%), url(../utils/img/img-home-2.webp), lightgray 50%;
-        grid-column: 3 / span 1;
-        background-position: 50% 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
+    &:nth-of-type(4) {
+      grid-column: 3 / span 1;
     }
 
-    &:nth-of-type(5){
-        background: linear-gradient(0deg, rgba(18, 26, 43, 0.24) 0%, rgba(18, 26, 43, 0.24) 100%), url(../utils/img/img-home-1.webp), lightgray 50%;
-        grid-column: 4 / span 1;
-        background-position: 50% 50%;
-        background-size: cover;
-        background-repeat: no-repeat;
+    &:nth-of-type(5) {
+      grid-column: 4 / span 1;
     }
   }
 
+  &__shadow {
+    z-index: -10;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    background: linear-gradient(
+      0deg,
+      rgba(18, 26, 43, 0.24) 0%,
+      rgba(18, 26, 43, 0.24) 100%
+    );
+  }
+
+  &__block-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    padding: 5rem 5rem;
+  }
 
   &__title {
     width: 100%;

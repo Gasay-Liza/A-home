@@ -1,27 +1,51 @@
 .first-screen {
+  position: relative;
   margin: 0 0;
-  padding: 3rem 7rem 5.5rem;
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  border-radius: 4rem;
   max-width: 188rem;
   height: 99.6rem;
-  //   background-image: url("../utils/img/wrapper-img.webp");
-  border-radius: 4rem;
-  background: linear-gradient(
+
+  &__background {
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: inherit;
+    background: linear-gradient(
       0deg,
       rgba(18, 26, 43, 0.24) 0%,
       rgba(18, 26, 43, 0.24) 100%
-    ),
-    url("../utils/img/wrapper-img.webp"),
-    lightgray -13.1778rem -10.6rem / 111.466% 118.348% no-repeat;
-  background-repeat: no-repeat;
-  background-size: cover;
+    );
+  }
+  > img {
+    z-index: -100;
+    position: absolute;
+    border-radius: 4rem;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(18, 26, 43, 0.24) 0%,
+      rgba(18, 26, 43, 0.24) 100%
+    );
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    margin: 0 0;
+    padding: 3rem 7rem 5.5rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
 
   &__middle-section {
     width: 100%;
     max-width: 126.4rem;
-    margin-top: 17.8rem;
+    margin-top: 30rem;
     margin-left: 29.8rem;
     display: flex;
     flex-direction: row;
@@ -175,12 +199,17 @@
     align-items: flex-end;
   }
 
+  &__title-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 118.7rem;
+  }
+
   &__title {
     display: flex;
     text-wrap: nowrap;
     width: 100%;
-    max-width: 118.7rem;
-    position: relative;
     color: $white;
     text-align: center;
     font-family: $drukcyr;
@@ -191,7 +220,7 @@
     text-transform: uppercase;
   }
 
-  &__title::after {
+  &__label {
     position: absolute;
     width: 18.9rem;
     content: "есть ипотека";
@@ -298,17 +327,23 @@
       }
     }
     &__image-wrapper {
+      position: relative;
       width: 19.2rem;
       height: 13.4rem;
-      background-image: url("../utils/img/img-home-3.webp");
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
       border: 1rem solid $white;
       border-radius: 2rem;
+    }
+
+    &__image {
+      z-index: -1;
+      position: absolute;
+      border-radius: 2rem;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
     }
 
     &__image-btn {
@@ -341,7 +376,6 @@
       display: flex;
       flex-direction: row;
       align-items: flex-end;
-      
     }
 
     &__price {

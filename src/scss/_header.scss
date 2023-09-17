@@ -1,7 +1,9 @@
 .header {
   z-index: 10;
-  position: fixed;
-  top: 30px;
+  padding: 0 7rem;
+  top: 5rem;
+  position: absolute;
+  top: 3rem;
   width: 100%;
   max-width: 188rem;
   padding: 0 7rem;
@@ -56,7 +58,7 @@
     padding: 1.6rem 3.2rem;
     align-items: center;
     gap: 1rem;
-    border-radius: 100px;
+    border-radius: 10rem;
     background: $white;
     border-radius: 10rem;
   }
