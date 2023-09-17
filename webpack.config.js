@@ -1,8 +1,7 @@
-
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const mode = process.env.NODE_ENV === "development";
 const devMode = mode === "development";
 const target = devMode ? "web" : "browserslist";
@@ -16,7 +15,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "./",
+    publicPath: "",
     assetModuleFilename: "utils/img/[name].[hash:8][ext]",
     clean: true,
   },
@@ -28,8 +27,9 @@ module.exports = {
   devServer: {
     static: path.resolve(__dirname, "./dist"),
     compress: true,
-    port: 8080,
+    port: 3001,
     open: true,
+    hot: true,
   },
   module: {
     rules: [
@@ -83,11 +83,11 @@ module.exports = {
       patterns: [
         // копируем .nojekyll из корневой директории проекта в папку dist
         {
-          from: '.nojekyll',
-          to: '',
-          toType: 'dir'
-        }
-      ]
-    })
+          from: ".nojekyll",
+          to: "",
+          toType: "dir",
+        },
+      ],
+    }),
   ],
 };
