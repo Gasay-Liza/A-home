@@ -10,7 +10,7 @@
   "scripts": {
     "start": "set NODE_ENV=development && webpack serve",
     "build": "set NODE_ENV=production && webpack",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist gh-pages -d dist -r https://github.com/Gasay-Liza/A-home.git",
     "dev": "set NODE_ENV=development && webpack serve",
     "clear": "rd /s /q dist"
   },
