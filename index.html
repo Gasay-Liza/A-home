@@ -8,13 +8,13 @@
     />
     <meta name="description" content="another website" />
     <title>А дома</title>
-  <script defer src="./bundle.js"></script><link href="./main.css" rel="stylesheet"></head>
+  <script defer src="bundle.js"></script><link href="main.css" rel="stylesheet"></head>
   <body>
     <header class="header">
       <a class="header__logo-link">
         <img
           class="header__logo"
-          src="./utils/img/logo-img.8616e97e.svg"
+          src="utils/img/logo-img.8616e97e.svg"
           alt="Логотип: Чайковский АгроСтрой"
         />
       </a>
@@ -42,7 +42,7 @@
       <a class="header__number"> 8 495 567 45 05 </a>
     </header>
     <section class="first-screen">
-      <div class="first-screen__middle-block">
+      <div class="first-screen__middle-section">
         <div class="first-screen__btn-container">
           <a class="first-screen__btn">
             <svg
@@ -53,8 +53,6 @@
             >
               <path
                 d="M1 11.0001L11 1.00006M11 1.00006H3.75862M11 1.00006V7.55179"
-                stroke="#131313"
-                stroke-width="2"
               />
             </svg>
           </a>
@@ -64,31 +62,83 @@
           Уникальная технология быстрого и&nbsp;бюджетного возведения домов
         </p>
         <a class="first-screen__call-btn">
-          <span class="first-screen__call-icon">
+          <div class="first-screen__call-icon">
             <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M16.7 22C15.57 22 14.38 21.73 13.15 21.21C11.95 20.7 10.74 20 9.56 19.15C8.39 18.29 7.26 17.33 6.19 16.28C5.13 15.21 4.17 14.08 3.32 12.92C2.46 11.72 1.77 10.52 1.28 9.36C0.76 8.12 0.5 6.92 0.5 5.79C0.5 5.01 0.64 4.27 0.91 3.58C1.19 2.87 1.64 2.21 2.25 1.64C3.02 0.88 3.9 0.5 4.84 0.5C5.23 0.5 5.63 0.59 5.97 0.75C6.36 0.93 6.69 1.2 6.93 1.56L9.25 4.83C9.46 5.12 9.62 5.4 9.73 5.68C9.86 5.98 9.93 6.28 9.93 6.57C9.93 6.95 9.82 7.32 9.61 7.67C9.46 7.94 9.23 8.23 8.94 8.52L8.26 9.23C8.27 9.26 8.28 9.28 8.29 9.3C8.41 9.51 8.65 9.87 9.11 10.41C9.6 10.97 10.06 11.48 10.52 11.95C11.11 12.53 11.6 12.99 12.06 13.37C12.63 13.85 13 14.09 13.22 14.2L13.2 14.25L13.93 13.53C14.24 13.22 14.54 12.99 14.83 12.84C15.38 12.5 16.08 12.44 16.78 12.73C17.04 12.84 17.32 12.99 17.62 13.2L20.94 15.56C21.31 15.81 21.58 16.13 21.74 16.51C21.89 16.89 21.96 17.24 21.96 17.59C21.96 18.07 21.85 18.55 21.64 19C21.43 19.45 21.17 19.84 20.84 20.2C20.27 20.83 19.65 21.28 18.93 21.57C18.24 21.85 17.49 22 16.7 22ZM13.2 14.26L13.04 14.94L13.31 14.24C13.26 14.23 13.22 14.24 13.2 14.26Z"
               />
             </svg>
-          </span>
+          </div>
 
           <span class="first-screen__call-frame">Заказать звонок</span>
         </a>
       </div>
 
-      <div class="first-screen__bottom-block">
+      <div class="first-screen__bottom-section">
         <p class="first-screen__title">Модульные дома</p>
-        <div class="first-screen__container">
-          <a class="first-screen__call">Заказать звонок</a>
+
+        <div class="first-screen__container container">
+          <div class="container__top">
+            <div class="container__top-block">
+              <div class="container__icons">
+                <div class="container__icon-wrapper">
+                  <img
+                    class="container__icon"
+                    src="utils/img/icon-home(2).442bcdde.webp"
+                    alt="Иконка: Модульный домик"
+                  />
+                </div>
+                <div class="container__icon-wrapper">
+                  <img
+                    class="container__icon"
+                    src="utils/img/icon-home.d4347549.webp"
+                    alt="Иконка: Модульный домик"
+                  />
+                </div>
+              </div>
+
+              <div class="container__text">
+                <p>5</p>
+                <p>лет<br />опыта</p>
+              </div>
+            </div>
+
+            <div class="container__image-wrapper">
+              <!-- <img
+                class="container__image"
+                src="./utils/img/img-home.webp"
+                alt="Изображение: Модульный дом"
+              /> -->
+              <a class="container__image-btn">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 11.0001L11 1.00006M11 1.00006H3.75862M11 1.00006V7.55179"/>
+                  </svg>
+              </a>
+              
+                
+            </div>
+          </div>
+
+          <div class="container__bottom">
+            <p class="container__price">
+              Цены на дома <br />
+              от <strong>2млн</strong> рублей!
+            </p>
+            <a class="container__btn">
+              <p class="container__btn-text">Рассчитать</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 11 16"
+                fill="none"
+              >
+                <path
+                  d="M1 12L10 3M10 3H3.48276M10 3V8.89655"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
-
-      <!-- <div class="first-screen__item">
-            <img src="#" alt="Фотография домика"/>
-            <p class="first-screen__number"></p>
-            <p class="first-screen__text"></p>
-            <p class="first-screen__price"></p>
-        </div> -->
     </section>
   </body>
 </html>
