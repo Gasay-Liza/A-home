@@ -1,227 +1,396 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="description" content="another website" />
+    <title>А дома</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-  <meta name="description" content="another website" />
-  <title>А дома</title>
-</head>
+  <body
+  >
+    <header class="header">
+      <div class="header__inner header__inner_desktop">
+        <a class="header__logo-link">
+          <img
+            class="header__logo"
+            src="./utils/img/logo-img.svg"
+            alt="Логотип: Чайковский АгроСтрой"
+          />
+        </a>
 
-<body>
-  <!-- <header class="header">
-    <a class="header__logo-link">
-      <img class="header__logo" src="./utils/img/logo-img.svg" alt="Логотип: Чайковский АгроСтрой" />
-    </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">О компании</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">Услуги</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">Проекты</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">Статьи</a>
+            </li>
+            <li class="header__nav-list-item">
+              <a href="#" class="header__nav-list-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header__number"> 8 495 567 45 05 </a>
+      </div>
+      <div class="header__inner header__inner_mobile">
+        <div class="overlay"></div>
+        <button class="header__burger-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 16"
+            fill="none"
+          >
+            <circle cx="23" cy="1" r="1" fill="white" />
+            <rect width="21" height="2" rx="1" fill="white" />
+            <rect
+              x="24"
+              y="9"
+              width="24"
+              height="2"
+              rx="0.999999"
+              transform="rotate(-180 24 9)"
+              fill="white"
+            />
+            <ellipse
+              cx="1"
+              cy="15"
+              rx="1"
+              ry="1"
+              transform="rotate(-180 1 15)"
+              fill="white"
+            />
+            <rect
+              x="24"
+              y="16"
+              width="21"
+              height="2"
+              rx="0.999999"
+              transform="rotate(-180 24 16)"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <a class="header__logo-link" href="#">
+          <img
+            class="header__logo"
+            src="./utils/img/logo-img.svg"
+            alt="Логотип: Чайковский АгроСтрой"
+          />
+        </a>
+        <a class="header__call-link" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="none"
+          >
+            <path
+              d="M15.0979 20C14.0447 20 12.9357 19.7488 11.7894 19.2651C10.671 18.7907 9.54334 18.1395 8.44362 17.3488C7.35322 16.5488 6.30009 15.6558 5.30289 14.6791C4.315 13.6837 3.42032 12.6326 2.62815 11.5535C1.82665 10.4372 1.1836 9.32093 0.726934 8.24186C0.242311 7.08837 0 5.97209 0 4.92093C0 4.19535 0.130475 3.50698 0.382106 2.86512C0.643057 2.20465 1.06244 1.5907 1.63094 1.06047C2.34856 0.353488 3.16869 0 4.04473 0C4.4082 0 4.78099 0.0837209 5.09786 0.232558C5.46132 0.4 5.76887 0.651163 5.99254 0.986046L8.15471 4.02791C8.35042 4.29767 8.49953 4.55814 8.60205 4.8186C8.72321 5.09767 8.78844 5.37674 8.78844 5.64651C8.78844 6 8.68593 6.34419 8.49021 6.66977C8.35042 6.92093 8.13607 7.1907 7.8658 7.46047L7.23206 8.12093C7.24138 8.14884 7.2507 8.16744 7.26002 8.18605C7.37185 8.3814 7.59553 8.71628 8.02423 9.21861C8.48089 9.73954 8.9096 10.214 9.3383 10.6512C9.88816 11.1907 10.3448 11.6186 10.7735 11.9721C11.3048 12.4186 11.6496 12.6419 11.8546 12.7442L12.5163 12.1209C12.8052 11.8326 13.0848 11.6186 13.3551 11.4791C13.8677 11.1628 14.52 11.107 15.1724 11.3767C15.4147 11.4791 15.6757 11.6186 15.9553 11.814L19.0494 14.0093C19.3942 14.2419 19.6459 14.5395 19.795 14.893C19.9348 15.2465 20 15.5721 20 15.8977C20 16.3442 19.8975 16.7907 19.7018 17.2093C19.5061 17.6279 19.2637 17.9907 18.9562 18.3256C18.425 18.9116 17.8472 19.3302 17.1761 19.6C16.5331 19.8605 15.8341 20 15.0979 20Z"
+            />
+          </svg>
+        </a>
+        <nav class="burger-menu">
+          <button class="burger-menu__close-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                d="M1 1L9 9M9 9L17 1M9 9L1 17M9 9L17 17"
+                stroke="#131313"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <ul class="burger-menu__list">
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">О компании</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Услуги</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Проекты</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Статьи</a>
+            </li>
+            <li class="burger-menu__item">
+              <a href="#" class="burger-menu__link">Контакты</a>
+            </li>
+          </ul>
+          <a class="burger-menu__number"> 8 495 567 45 05 </a>
+        </nav>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="first-screen">
+        <div class="first-screen__wrapper">
+          <div class="first-screen__background"></div>
+          <img
+            src="./utils/img/wrapper-img.webp"
+            alt="Фотография: Модульный дом"
+          />
+          <div class="first-screen__content">
+            <div class="first-screen__middle-section">
+              <div class="first-screen__btn-container">
+                <a class="first-screen__btn">
+                  <svg
+                    width="1.2rem"
+                    height="1.2rem"
+                    viewBox="0 0 12 12"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1 11.0001L11 1.00006M11 1.00006H3.75862M11 1.00006V7.55179"
+                    />
+                  </svg>
+                </a>
+              </div>
 
-    <nav class="header__nav">
-      <ul class="header__nav-list">
-        <li class="header__nav-list-item">
-          <a href="#" class="header__nav-list-link">О компании</a>
-        </li>
-        <li class="header__nav-list-item">
-          <a href="#" class="header__nav-list-link">Услуги</a>
-        </li>
-        <li class="header__nav-list-item">
-          <a href="#" class="header__nav-list-link">Проекты</a>
-        </li>
-        <li class="header__nav-list-item">
-          <a href="#" class="header__nav-list-link">Статьи</a>
-        </li>
-        <li class="header__nav-list-item">
-          <a href="#" class="header__nav-list-link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <a class="header__number"> 8 495 567 45 05 </a>
-  </header> -->
-  <main class="main-content">
-    <!-- <section class="first-screen">
-      <div class="first-screen__wrapper">
-        <div class="first-screen__background"></div>
-        <img src="./utils/img/wrapper-img.webp" alt="Фотография: Модульный дом" />
-        <div class="first-screen__content">
-          <div class="first-screen__middle-section">
-            <div class="first-screen__btn-container">
-              <a class="first-screen__btn">
-                <svg width="1.2rem" height="1.2rem" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 11.0001L11 1.00006M11 1.00006H3.75862M11 1.00006V7.55179" />
-                </svg>
+              <p class="first-screen__text">
+                Уникальная технология быстрого и&nbsp;бюджетного возведения
+                домов
+              </p>
+              <a class="first-screen__call-btn">
+                <div class="first-screen__call-icon">
+                  <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M16.7 22C15.57 22 14.38 21.73 13.15 21.21C11.95 20.7 10.74 20 9.56 19.15C8.39 18.29 7.26 17.33 6.19 16.28C5.13 15.21 4.17 14.08 3.32 12.92C2.46 11.72 1.77 10.52 1.28 9.36C0.76 8.12 0.5 6.92 0.5 5.79C0.5 5.01 0.64 4.27 0.91 3.58C1.19 2.87 1.64 2.21 2.25 1.64C3.02 0.88 3.9 0.5 4.84 0.5C5.23 0.5 5.63 0.59 5.97 0.75C6.36 0.93 6.69 1.2 6.93 1.56L9.25 4.83C9.46 5.12 9.62 5.4 9.73 5.68C9.86 5.98 9.93 6.28 9.93 6.57C9.93 6.95 9.82 7.32 9.61 7.67C9.46 7.94 9.23 8.23 8.94 8.52L8.26 9.23C8.27 9.26 8.28 9.28 8.29 9.3C8.41 9.51 8.65 9.87 9.11 10.41C9.6 10.97 10.06 11.48 10.52 11.95C11.11 12.53 11.6 12.99 12.06 13.37C12.63 13.85 13 14.09 13.22 14.2L13.2 14.25L13.93 13.53C14.24 13.22 14.54 12.99 14.83 12.84C15.38 12.5 16.08 12.44 16.78 12.73C17.04 12.84 17.32 12.99 17.62 13.2L20.94 15.56C21.31 15.81 21.58 16.13 21.74 16.51C21.89 16.89 21.96 17.24 21.96 17.59C21.96 18.07 21.85 18.55 21.64 19C21.43 19.45 21.17 19.84 20.84 20.2C20.27 20.83 19.65 21.28 18.93 21.57C18.24 21.85 17.49 22 16.7 22ZM13.2 14.26L13.04 14.94L13.31 14.24C13.26 14.23 13.22 14.24 13.2 14.26Z"
+                    />
+                  </svg>
+                </div>
+
+                <span class="first-screen__call-frame">Заказать звонок</span>
               </a>
             </div>
 
-            <p class="first-screen__text">
-              Уникальная технология быстрого и&nbsp;бюджетного возведения домов
-            </p>
-            <a class="first-screen__call-btn">
-              <div class="first-screen__call-icon">
-                <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M16.7 22C15.57 22 14.38 21.73 13.15 21.21C11.95 20.7 10.74 20 9.56 19.15C8.39 18.29 7.26 17.33 6.19 16.28C5.13 15.21 4.17 14.08 3.32 12.92C2.46 11.72 1.77 10.52 1.28 9.36C0.76 8.12 0.5 6.92 0.5 5.79C0.5 5.01 0.64 4.27 0.91 3.58C1.19 2.87 1.64 2.21 2.25 1.64C3.02 0.88 3.9 0.5 4.84 0.5C5.23 0.5 5.63 0.59 5.97 0.75C6.36 0.93 6.69 1.2 6.93 1.56L9.25 4.83C9.46 5.12 9.62 5.4 9.73 5.68C9.86 5.98 9.93 6.28 9.93 6.57C9.93 6.95 9.82 7.32 9.61 7.67C9.46 7.94 9.23 8.23 8.94 8.52L8.26 9.23C8.27 9.26 8.28 9.28 8.29 9.3C8.41 9.51 8.65 9.87 9.11 10.41C9.6 10.97 10.06 11.48 10.52 11.95C11.11 12.53 11.6 12.99 12.06 13.37C12.63 13.85 13 14.09 13.22 14.2L13.2 14.25L13.93 13.53C14.24 13.22 14.54 12.99 14.83 12.84C15.38 12.5 16.08 12.44 16.78 12.73C17.04 12.84 17.32 12.99 17.62 13.2L20.94 15.56C21.31 15.81 21.58 16.13 21.74 16.51C21.89 16.89 21.96 17.24 21.96 17.59C21.96 18.07 21.85 18.55 21.64 19C21.43 19.45 21.17 19.84 20.84 20.2C20.27 20.83 19.65 21.28 18.93 21.57C18.24 21.85 17.49 22 16.7 22ZM13.2 14.26L13.04 14.94L13.31 14.24C13.26 14.23 13.22 14.24 13.2 14.26Z" />
-                </svg>
+            <div class="first-screen__bottom-section">
+              <div class="first-screen__title-container">
+                <p class="first-screen__title">Модульные дома</p>
+                <p class="first-screen__label">Есть ипотека</p>
               </div>
 
-              <span class="first-screen__call-frame">Заказать звонок</span>
-            </a>
-          </div>
-
-          <div class="first-screen__bottom-section">
-            <div class="first-screen__title-container">
-              <p class="first-screen__title">Модульные дома</p>
-              <p class="first-screen__label">Есть ипотека</p>
-            </div>
-
-            <div class="first-screen__container container">
-              <div class="container__top">
-                <div class="container__top-block">
-                  <div class="container__icons">
-                    <div class="container__icon-wrapper">
-                      <img class="container__icon" src="./utils/img/img-home-2.webp" alt="Иконка: Модульный домик" />
+              <div class="first-screen__container container">
+                <div class="container__top">
+                  <div class="container__top-block">
+                    <div class="container__icons">
+                      <div class="container__icon-wrapper">
+                        <img
+                          class="container__icon"
+                          src="./utils/img/img-home-2.webp"
+                          alt="Иконка: Модульный домик"
+                        />
+                      </div>
+                      <div class="container__icon-wrapper">
+                        <img
+                          class="container__icon"
+                          src="./utils/img/img-home-1.webp"
+                          alt="Иконка: Модульный домик"
+                        />
+                      </div>
                     </div>
-                    <div class="container__icon-wrapper">
-                      <img class="container__icon" src="./utils/img/img-home-1.webp" alt="Иконка: Модульный домик" />
+
+                    <div class="container__text">
+                      <p>5</p>
+                      <p>лет<br />опыта</p>
                     </div>
                   </div>
 
-                  <div class="container__text">
-                    <p>5</p>
-                    <p>лет<br />опыта</p>
+                  <div class="container__image-wrapper">
+                    <img
+                      class="container__image"
+                      src="./utils/img/img-home-3.webp"
+                      alt="Изображение: Модульный дом"
+                    />
+                    <a class="container__image-btn">
+                      <svg
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 11.0001L11 1.00006M11 1.00006H3.75862M11 1.00006V7.55179"
+                        />
+                      </svg>
+                    </a>
                   </div>
                 </div>
 
-                <div class="container__image-wrapper">
-                  <img class="container__image" src="./utils/img/img-home-3.webp" alt="Изображение: Модульный дом" />
-                  <a class="container__image-btn">
-                    <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 11.0001L11 1.00006M11 1.00006H3.75862M11 1.00006V7.55179" />
+                <div class="container__bottom">
+                  <p class="container__price">
+                    Цены на дома <br />
+                    от <strong>2млн</strong> рублей!
+                  </p>
+                  <a class="container__btn">
+                    <p class="container__btn-text">Рассчитать</p>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 11 16"
+                      fill="none"
+                    >
+                      <path d="M1 12L10 3M10 3H3.48276M10 3V8.89655" />
                     </svg>
                   </a>
                 </div>
               </div>
-
-              <div class="container__bottom">
-                <p class="container__price">
-                  Цены на дома <br />
-                  от <strong>2млн</strong> рублей!
-                </p>
-                <a class="container__btn">
-                  <p class="container__btn-text">Рассчитать</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 16" fill="none">
-                    <path d="M1 12L10 3M10 3H3.48276M10 3V8.89655" />
-                  </svg>
-                </a>
-              </div>
             </div>
           </div>
-
-
         </div>
-      </div>
 
-      <div class="first-screen__container container">
-        <div class="container__top">
-          <div class="container__top-block">
-            <div class="container__icons">
-              <div class="container__icon-wrapper">
-                <img class="container__icon" src="./utils/img/img-home-2.webp" alt="Иконка: Модульный домик" />
+        <div class="first-screen__container container">
+          <div class="container__top">
+            <div class="container__top-block">
+              <div class="container__icons">
+                <div class="container__icon-wrapper">
+                  <img
+                    class="container__icon"
+                    src="./utils/img/img-home-2.webp"
+                    alt="Иконка: Модульный домик"
+                  />
+                </div>
+                <div class="container__icon-wrapper">
+                  <img
+                    class="container__icon"
+                    src="./utils/img/img-home-1.webp"
+                    alt="Иконка: Модульный домик"
+                  />
+                </div>
               </div>
-              <div class="container__icon-wrapper">
-                <img class="container__icon" src="./utils/img/img-home-1.webp" alt="Иконка: Модульный домик" />
+
+              <div class="container__text">
+                <p>5</p>
+                <p>лет<br />опыта</p>
               </div>
             </div>
 
-            <div class="container__text">
-              <p>5</p>
-              <p>лет<br />опыта</p>
+            <div class="container__image-wrapper">
+              <img
+                class="container__image"
+                src="./utils/img/img-home-3.webp"
+                alt="Изображение: Модульный дом"
+              />
+              <a class="container__image-btn">
+                <svg
+                  viewBox="0 0 12 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1 11.0001L11 1.00006M11 1.00006H3.75862M11 1.00006V7.55179"
+                  />
+                </svg>
+              </a>
             </div>
           </div>
 
-          <div class="container__image-wrapper">
-            <img class="container__image" src="./utils/img/img-home-3.webp" alt="Изображение: Модульный дом" />
-            <a class="container__image-btn">
-              <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 11.0001L11 1.00006M11 1.00006H3.75862M11 1.00006V7.55179" />
+          <div class="container__bottom">
+            <p class="container__price">
+              Цены на дома <br />
+              от <strong>2млн</strong> рублей!
+            </p>
+            <a class="container__btn">
+              <p class="container__btn-text">Рассчитать</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 11 16"
+                fill="none"
+              >
+                <path d="M1 12L10 3M10 3H3.48276M10 3V8.89655" />
               </svg>
             </a>
           </div>
         </div>
+      </section>
 
-        <div class="container__bottom">
-          <p class="container__price">
-            Цены на дома <br />
-            от <strong>2млн</strong> рублей!
-          </p>
-          <a class="container__btn">
-            <p class="container__btn-text">Рассчитать</p>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 16" fill="none">
-              <path d="M1 12L10 3M10 3H3.48276M10 3V8.89655" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>  -->
-
-    <section class="advantages">
-      <ul class="advantages__blocks">
-        <li class="advantages__block">
-          <div class="advantages__block-content">
-            <p class="advantages__title">Преимущества модульных домов</p>
-            <p class="advantages__text">
-              Мы&nbsp;одна из&nbsp;самых опытных команд
-              по&nbsp;проектированию, производству и&nbsp;эксплуатации
-              деревянных модульных домов на&nbsp;территории России
-              и&nbsp;бывшего СССР. Современная архитектура с&nbsp;качественной
-              реализацией.
-            </p>
-          </div>
-        </li>
-
-        <li class="advantages__block">
-          <div class="advantages__shadow"></div>
-          <img src="./utils/img/img-home-4.webp" alt="Изображение: Модульный дом" />
-          <div class="advantages__block-content">
-            <span class="advantages__block-text">Оригинальный внешний вид</span>
-            <div class="advantages__number-wrapper">
-              <span class="advantages__number">01</span>
+      <section class="advantages">
+        <ul class="advantages__blocks">
+          <li class="advantages__block">
+            <div class="advantages__block-content">
+              <p class="advantages__title">Преимущества модульных домов</p>
+              <p class="advantages__text">
+                Мы&nbsp;одна из&nbsp;самых опытных команд
+                по&nbsp;проектированию, производству и&nbsp;эксплуатации
+                деревянных модульных домов на&nbsp;территории России
+                и&nbsp;бывшего СССР. Современная архитектура с&nbsp;качественной
+                реализацией.
+              </p>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li class="advantages__block">
-          <div class="advantages__shadow"></div>
-          <img src="./utils/img/img-home-3.webp" alt="Изображение: Модульный дом" />
-          <div class="advantages__block-content">
-            <span class="advantages__block-text">Быстрое возведение</span>
-            <div class="advantages__number-wrapper">
-              <span class="advantages__number">02</span>
+          <li class="advantages__block">
+            <div class="advantages__shadow"></div>
+            <img
+              src="./utils/img/img-home-4.webp"
+              alt="Изображение: Модульный дом"
+            />
+            <div class="advantages__block-content">
+              <span class="advantages__block-text"
+                >Оригинальный внешний вид</span
+              >
+              <div class="advantages__number-wrapper">
+                <span class="advantages__number">01</span>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li class="advantages__block">
-          <div class="advantages__shadow"></div>
-          <img src="./utils/img/img-home-1.webp" alt="Изображение: Модульный дом" />
-          <div class="advantages__block-content">
-            <span class="advantages__block-text">Экономия<br />на&nbsp;фундаменте</span>
-            <div class="advantages__number-wrapper">
-              <span class="advantages__number">03</span>
+          <li class="advantages__block">
+            <div class="advantages__shadow"></div>
+            <img
+              src="./utils/img/img-home-3.webp"
+              alt="Изображение: Модульный дом"
+            />
+            <div class="advantages__block-content">
+              <span class="advantages__block-text">Быстрое возведение</span>
+              <div class="advantages__number-wrapper">
+                <span class="advantages__number">02</span>
+              </div>
             </div>
-          </div>
-        </li>
+          </li>
 
-        <li class="advantages__block">
-          <div class="advantages__shadow"></div>
-          <img src="./utils/img/img-home-2.webp" alt="Изображение: Модульный дом" />
-          <div class="advantages__block-content">
-            <span class="advantages__block-text">Отсутствие усадки</span>
-            <div class="advantages__number-wrapper">
-              <span class="advantages__number">04</span>
+          <li class="advantages__block">
+            <div class="advantages__shadow"></div>
+            <img
+              src="./utils/img/img-home-1.webp"
+              alt="Изображение: Модульный дом"
+            />
+            <div class="advantages__block-content">
+              <span class="advantages__block-text"
+                >Экономия<br />на&nbsp;фундаменте</span
+              >
+              <div class="advantages__number-wrapper">
+                <span class="advantages__number">03</span>
+              </div>
             </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </main>
-</body>
+          </li>
 
+          <li class="advantages__block">
+            <div class="advantages__shadow"></div>
+            <img
+              src="./utils/img/img-home-2.webp"
+              alt="Изображение: Модульный дом"
+            />
+            <div class="advantages__block-content">
+              <span class="advantages__block-text">Отсутствие усадки</span>
+              <div class="advantages__number-wrapper">
+                <span class="advantages__number">04</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
 </html>

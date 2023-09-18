@@ -236,7 +236,6 @@
     display: flex;
     width: 100%;
     color: $white;
-    text-align: center;
     font-family: $drukcyr;
     font-size: 23rem;
     font-style: normal;
@@ -550,6 +549,7 @@
     }
 
     &__title {
+      text-wrap: nowrap;
       font-size: 13rem;
       line-height: 140%;
     }
@@ -558,7 +558,7 @@
       position: absolute;
       width: 22.2rem;
       height: 5.4rem;
-      bottom: 12rem;
+      bottom: 14rem;
       right: 0;
       //текст
       font-size: 2.8rem;
