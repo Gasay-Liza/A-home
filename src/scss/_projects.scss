@@ -340,17 +340,36 @@
         align-items: center;
         justify-content: flex-start;
 
-        &:last-child{
+        > a {
+          &:first-of-type {
             // .projects__btn
-                display: none;
-                opacity: 0;
+            display: none;
+            opacity: 0;
           }
+        }
       }
     }
 
     // .projects__title
     &__title {
       font-size: 8.8rem;
+    }
+
+    &__btn {
+      height: 8rem;
+      padding: 4.8rem 2.4rem;
+      flex-shrink: 0;
+      border-radius: 20rem;
+      > svg {
+        width: 2.2rem;
+        height: 3.2rem;
+        stroke-width: 0.3rem;
+      }
+    }
+
+    // .projects__btn-text
+    &__btn-text {
+      font-size: 2.8rem;
     }
 
     // .projects__list
@@ -383,6 +402,11 @@
         line-height: 90%;
       }
 
+      // .project__description
+      &__description {
+        font-size: 5rem;
+      }
+      
       // .project__about
       &__about {
         font-size: 3.2rem;
