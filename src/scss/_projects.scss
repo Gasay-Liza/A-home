@@ -1,0 +1,272 @@
+.projects {
+    width: 100%;
+    max-width: 1742px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // .projects__inner 
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+
+        // .projects__inner_top{
+        &_top {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    // .projects__title
+    &__title {
+        color: $black;
+        font-family: $drukcyr;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    // .projects__btn 
+    &__btn {
+        display: inline-flex;
+        height: 54px;
+        padding: 12px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: $l-green;
+    }
+
+    // .projects__btn-text 
+    &__btn-text {
+        color: $white;
+        font-family: $avanti;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    // .projects__list
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project {
+        border-radius: 25px 25px 0 25px;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        max-width: 413px;
+        height: 426px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 50px;
+        &:hover {
+            
+            .project__shadow{
+                background-color: $l-green;
+                opacity: 1;
+            }
+        }
+        // .project__shadow
+        &__shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #2828288A;
+            opacity: 0.54;
+            z-index: -1;
+            transition: background-color .6s ease;   
+        }
+
+        // .project__img{
+        &__img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -10;
+        }
+
+
+        // .project_top
+        &_top {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        // .project__square 
+        &__square {
+            display: flex;
+            width: 100%;
+            max-width: max-content;
+            padding: 10px 20px 8px 20px;
+            border-radius: 100px;
+            background: $l-green;
+            align-items: flex-start;
+            color: $white;
+            font-family: $avanti;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%;
+            text-transform: uppercase;
+        }
+
+        // .project__title
+        &__title {
+            color: $white;
+            font-family: $drukcyr;
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 100%;
+        }
+
+        // .project__about 
+        &__about {
+            color: $white;
+            font-family: $avanti;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+        }
+
+        // .project__link-wrapper 
+        &__btn-wrapper {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 85px;
+            height: 85px;
+
+
+            >span {
+                position: relative;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 25px 0 0 0;
+                background-color: $white;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 85px;
+                    width: 85px;
+                    height: 85px;
+                    border-radius: 0 0 25px 0;
+                    box-shadow: 40px 20px 0 20px $white;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 85px;
+                    width: 85px;
+                    height: 85px;
+                    border-radius: 0 0 25px 0;
+                    box-shadow: 20px 40px 0 20px $white;
+                }
+            }
+        }
+
+
+
+
+        // .project__link 
+        &__btn {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: $l-green;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 100;
+            &:hover{
+                svg{
+                    transform: translate(0.3rem, -0.4rem);
+                }
+                
+              }
+            >span {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 70px;
+                height: 70px;
+                border-radius: 20px 0 0 0;
+                background-color: $white;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: 70px;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 0 0 20px 0;
+                    box-shadow: 40px 20px 0 20px $white;
+                }
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 70px;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 0 0 20px 0;
+                    box-shadow: 20px 40px 0 20px $white;
+                }
+            }
+
+            >svg {
+                width: 12px;
+                height: 12px;
+                stroke-width: 2px;
+                stroke: $white;
+                transition: transform 0.3s ease;
+
+            }
+
+
+
+        }
+    }
+}
