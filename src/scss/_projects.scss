@@ -1,6 +1,6 @@
 .projects {
     width: 100%;
-    max-width: 1742px;
+    max-width: 174.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        gap: 50px;
+        gap: 5rem;
 
         // .projects__inner_top{
         &_top {
@@ -27,7 +27,7 @@
     &__title {
         color: $black;
         font-family: $drukcyr;
-        font-size: 90px;
+        font-size: 9rem;
         font-style: normal;
         font-weight: 500;
         line-height: 110%;
@@ -36,13 +36,13 @@
     // .projects__btn 
     &__btn {
         display: inline-flex;
-        height: 54px;
-        padding: 12px 24px;
+        height: 5.4rem;
+        padding: 1.2rem 2.4rem;
         justify-content: center;
         align-items: center;
-        gap: 12px;
+        gap: 1.2rem;
         flex-shrink: 0;
-        border-radius: 100px;
+        border-radius: 10rem;
         background: $l-green;
     }
 
@@ -50,7 +50,7 @@
     &__btn-text {
         color: $white;
         font-family: $avanti;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -62,22 +62,22 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 3rem;
         align-items: center;
         justify-content: center;
     }
 
     .project {
-        border-radius: 25px 25px 0 25px;
+        border-radius: 2.5rem 2.5rem 0 2.5rem;
         position: relative;
         overflow: hidden;
         width: 100%;
-        max-width: 413px;
-        height: 426px;
+        max-width: 41.3rem;
+        height: 42.6rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 50px;
+        padding: 5rem;
         &:hover {
             
             .project__shadow{
@@ -115,7 +115,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            gap: 10px;
+            gap: 1rem;
         }
 
         // .project__square 
@@ -123,13 +123,13 @@
             display: flex;
             width: 100%;
             max-width: max-content;
-            padding: 10px 20px 8px 20px;
-            border-radius: 100px;
+            padding: 1rem 2rem 0.8rem 2rem;
+            border-radius: 10rem;
             background: $l-green;
             align-items: flex-start;
             color: $white;
             font-family: $avanti;
-            font-size: 22px;
+            font-size: 2.2rem;
             font-style: normal;
             font-weight: 700;
             line-height: 120%;
@@ -140,7 +140,7 @@
         &__title {
             color: $white;
             font-family: $drukcyr;
-            font-size: 44px;
+            font-size: 4.4rem;
             font-style: normal;
             font-weight: 500;
             line-height: 100%;
@@ -150,7 +150,7 @@
         &__about {
             color: $white;
             font-family: $avanti;
-            font-size: 18px;
+            font-size: 1.8rem;
             font-style: normal;
             font-weight: 400;
             line-height: 130%;
@@ -164,8 +164,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 85px;
-            height: 85px;
+            width: 8.5rem;
+            height: 8.5rem;
 
 
             >span {
@@ -174,29 +174,29 @@
                 bottom: 0;
                 width: 100%;
                 height: 100%;
-                border-radius: 25px 0 0 0;
+                border-radius: 2.5rem 0 0 0;
                 background-color: $white;
 
                 &:before {
                     content: '';
                     position: absolute;
                     right: 0;
-                    bottom: 85px;
-                    width: 85px;
-                    height: 85px;
-                    border-radius: 0 0 25px 0;
-                    box-shadow: 40px 20px 0 20px $white;
+                    bottom: 8.5rem;
+                    width: 8.5rem;
+                    height: 8.5rem;
+                    border-radius: 0 0 2.5rem 0;
+                    box-shadow: 4rem 2rem 0 2rem $white;
                 }
 
                 &:after {
                     content: '';
                     position: absolute;
                     bottom: 0;
-                    right: 85px;
-                    width: 85px;
-                    height: 85px;
-                    border-radius: 0 0 25px 0;
-                    box-shadow: 20px 40px 0 20px $white;
+                    right: 8.5rem;
+                    width: 8.5rem;
+                    height: 8.5rem;
+                    border-radius: 0 0 2.5rem 0;
+                    box-shadow: 2rem 4rem 0 2rem $white;
                 }
             }
         }
@@ -209,8 +209,8 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 70px;
-            height: 70px;
+            width: 7rem;
+            height: 7rem;
             border-radius: 50%;
             background-color: $l-green;
             display: flex;
@@ -220,7 +220,7 @@
             z-index: 100;
             &:hover{
                 svg{
-                    transform: translate(0.3rem, -0.4rem);
+                    transform: translate(0.15rem, -0.2rem);
                 }
                 
               }
@@ -228,38 +228,38 @@
                 position: absolute;
                 right: 0;
                 bottom: 0;
-                width: 70px;
-                height: 70px;
-                border-radius: 20px 0 0 0;
+                width: 7rem;
+                height: 7rem;
+                border-radius: 2rem 0 0 0;
                 background-color: $white;
 
                 &:before {
                     content: '';
                     position: absolute;
                     right: 0;
-                    bottom: 70px;
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 0 0 20px 0;
-                    box-shadow: 40px 20px 0 20px $white;
+                    bottom: 7rem;
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 0 0 2rem 0;
+                    box-shadow: 4rem 2rem 0 2rem $white;
                 }
 
                 &:after {
                     content: '';
                     position: absolute;
                     bottom: 0;
-                    right: 70px;
-                    width: 70px;
-                    height: 70px;
-                    border-radius: 0 0 20px 0;
-                    box-shadow: 20px 40px 0 20px $white;
+                    right: 7rem;
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 0 0 2rem 0;
+                    box-shadow: 2rem 4rem 0 2rem $white;
                 }
             }
 
             >svg {
-                width: 12px;
-                height: 12px;
-                stroke-width: 2px;
+                width: 1.2rem;
+                height: 1.2rem;
+                stroke-width: 0.2rem;
                 stroke: $white;
                 transition: transform 0.3s ease;
 
@@ -268,5 +268,178 @@
 
 
         }
+    }
+
+
+    @media (max-width: 48em) {
+            width: 100%;
+            max-width: 100%;
+          
+            // .projects__inner 
+            &__inner {
+                gap: 30px;
+        
+                // .projects__inner_top{
+                &_top {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+            }
+        
+            // .projects__title
+            &__title {
+                font-size: 44px;
+            }
+        
+            // .projects__btn 
+            &__btn {
+                display: none;
+                opacity: 0;
+            }
+        
+            // .projects__list
+            &__list {
+                flex-direction:column;
+                gap: 16px;
+            }
+        
+            .project {
+                border-radius: 10px 10px 0 10px;
+                max-width: 100%;
+                height: 296px;
+                padding: 16px;
+        
+                // .project_top
+                &_top {
+                    gap: 10px;
+                }
+        
+                // .project__square 
+                &__square {
+                    padding: 10px 20px;
+                    border-radius: 100px;
+                    font-size: 14px;
+                }
+        
+                // .project__title
+                &__title {
+                    font-size: 20px;
+                }
+        
+                // .project__about 
+                &__about {
+                    font-size: 16px;
+                }
+        
+                // .project__link-wrapper 
+                &__btn-wrapper {
+                    width: 58px;
+                    height: 58px;
+        
+        
+                    >span {
+                        position: relative;
+                        right: 0;
+                        bottom: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px 0 0 0;
+                        background-color: $white;
+        
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            bottom: 58px;
+                            width: 58px;
+                            height: 58px;
+                            border-radius: 0 0 10px 0;
+                            box-shadow: 20px 20px 0 10px $white;
+                        }
+        
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            right: 58px;
+                            width: 58px;
+                            height: 58px;
+                            border-radius: 0 0 10px 0;
+                            box-shadow: 10px 20px 0 10px $white;
+                        }
+                    }
+                }
+        
+        
+        
+        
+                // .project__link 
+                &__btn {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 7rem;
+                    height: 7rem;
+                    border-radius: 50%;
+                    background-color: $l-green;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    z-index: 100;
+                    &:hover{
+                        svg{
+                            transform: translate(0.15rem, -0.2rem);
+                        }
+                        
+                      }
+                    >span {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 7rem;
+                        height: 7rem;
+                        border-radius: 2rem 0 0 0;
+                        background-color: $white;
+        
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            right: 0;
+                            bottom: 7rem;
+                            width: 7rem;
+                            height: 7rem;
+                            border-radius: 0 0 2rem 0;
+                            box-shadow: 4rem 2rem 0 2rem $white;
+                        }
+        
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            right: 7rem;
+                            width: 7rem;
+                            height: 7rem;
+                            border-radius: 0 0 2rem 0;
+                            box-shadow: 2rem 4rem 0 2rem $white;
+                        }
+                    }
+        
+                    >svg {
+                        width: 1.2rem;
+                        height: 1.2rem;
+                        stroke-width: 0.2rem;
+                        stroke: $white;
+                        transition: transform 0.3s ease;
+        
+                    }
+        
+        
+        
+                }
+            }
     }
 }
