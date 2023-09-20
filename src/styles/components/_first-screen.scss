@@ -148,17 +148,7 @@
   }
 
   &__call-btn {
-    padding: 0 0;
-    margin-left: 24.4rem;
-    display: flex;
-    width: 23.4rem;
-    height: 5.8rem;
-    padding: 0.05rem;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-
+    @extend .call-btn;
     &:hover {
       .first-screen__call-icon {
         >svg {
@@ -169,46 +159,11 @@
   }
 
   &__call-icon {
-    display: flex;
-    padding: 1.8rem 0 0 1.8rem;
-    width: 6.6rem;
-    height: 5.7rem;
-    background-image: url(../utils/img/btn-call-wrapper.svg);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    >svg {
-      width: 2.2rem;
-      height: 2.2rem;
-      transition: transform 0.3s ease;
-
-      path {
-        fill: $l-green;
-      }
-    }
+    @include call-icon($l-green)
   }
 
   &__call-frame {
-    display: flex;
-    margin-left: -0.5rem;
-    box-sizing: border-box;
-    width: 16.9rem;
-    height: 5.6rem;
-    padding: 1.7rem 1.6rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    flex-shrink: 0;
-    border-radius: 10rem;
-    background: $white;
-    // текст
-    color: $black;
-    font-family: $avanti;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    @extend .call-frame
   }
 
   &__bottom-section {

@@ -95,14 +95,8 @@
   }
 
   &__title {
+    @include title($black, $drukcyr);
     width: 100%;
-    max-width: 53.8rem;
-    color: $black;
-    font-family: $drukcyr;
-    font-size: 9rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
   }
 
   &__text {
@@ -172,11 +166,6 @@
 
   &__block-content {
     padding: 3.2rem 3.2rem;
-  }
-
-  &__title {
-    font-size: 8.8rem;
-    line-height: 110%;
   }
 
   &__text {

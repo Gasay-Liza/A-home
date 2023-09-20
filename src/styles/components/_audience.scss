@@ -61,12 +61,7 @@
     // .audience__title
     &__title {
         width: 53.8rem;
-     color: $black;
-        font-family: $drukcyr;
-        font-size: 9rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 110%;
+        @include title($black, $drukcyr);
     }
 
     // .audience__text
@@ -139,12 +134,6 @@
                 background-size: 18.2rem 24.6rem;
             }
 
-        }
-
-        // .audience__title
-        &__title {
-            width: 100%;
-            font-size: 8.8rem;
         }
 
         // .audience__text
