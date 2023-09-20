@@ -1,5 +1,5 @@
 import "./utils/fonts/fonts.css";
-import './scss/index.scss';
+import './styles/main.scss';
 import './index.html'
 import $ from 'jquery';
 

@@ -1,0 +1,13 @@
+@import "base/set";
+@import "base/param";
+
+@import "components/header";
+@import "components/first-screen";
+@import "components/advantages";
+@import "components/main-content";
+@import "components/audience";
+@import "components/projects";
+
+.body{
+    margin: 2rem 2rem;
+}
