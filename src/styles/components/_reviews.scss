@@ -1,6 +1,6 @@
 .reviews {
   width: 100%;
-  max-width: 1740px;
+  max-width: 174rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 50px;
+    gap: 5rem;
   }
   // .reviews__top-section
   &__top-section {
@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 30px;
+    gap: 3rem;
   }
   .reviews-block {
     width: 100%;
@@ -45,19 +45,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 478px;
-    padding: 50px;
+    height: 47.8rem;
+    padding: 5rem;
     box-sizing: border-box;
     background-color: $grey;
-    border-radius: 40px;
+    border-radius: 4rem;
 
     >span {
         position: absolute;
         top: 0;
         right: 0;
-        width: 333px;
-        height: 157px;
-        border-radius: 26px;
+        width: 33.3rem;
+        height: 15.7rem;
+        border-radius: 2.6rem;
         background-color: $white;
         &:before {
             content: '';
@@ -66,8 +66,8 @@
             top: 0;
             width: 10rem;
             height: 10rem;
-            border-radius: 0 26px 0 0;
-            box-shadow: 10px -10px 0 10px $white;
+            border-radius: 0 2.6rem 0 0;
+            box-shadow: 1rem -1rem 0 1rem $white;
         }
     
         &:after {
@@ -75,10 +75,10 @@
             position: absolute;
             top: 100%;
             right: 0;
-            width: 100px;
-            height: 100px;
-            border-radius: 0 26px 0 0;
-            box-shadow: 10px -10px 0 10px $white;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 0 2.6rem 0 0;
+            box-shadow: 1rem -1rem 0 1rem $white;
         }
     }
     // .reviews-block__top
@@ -93,28 +93,28 @@
       top: 0;
       right: 0;
       background-color: $l-blue;
-      border-radius: 26px;
+      border-radius: 2.6rem;
       display: flex;
       flex-direction: row;
       align-items: center;
       box-sizing: border-box;
-      width: 323px;
-      height: 147px;
-      padding: 32px;
-      gap: 20px;
+      width: 32.3rem;
+      height: 14.7rem;
+      padding: 3.2rem;
+      gap: 2rem;
     }
 
     // .reviews-block__author-icon
     &__author-icon {
-      width: 66px;
-      height: 66px;
+      width: 6.6rem;
+      height: 6.6rem;
       display: flex;
       align-items: center;
       justify-content: center;
       color: $white;
       text-align: center;
       font-family: $avanti;
-      font-size: 20.842px;
+      font-size: 2.0842rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
@@ -126,20 +126,20 @@
     &__text-section {
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 1.2rem;
       justify-content: center;
     }
     // .reviews-block__name
     &__name {
       width: 100%;
-      max-width: 175px;
+      max-width: 17.5rem;
       color: $white;
       font-family: $avanti;
-      font-size: 20px;
+      font-size: 2rem;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      letter-spacing: 0.4px;
+      letter-spacing: 0.04rem;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
@@ -148,16 +148,16 @@
     &__date {
       color: var(--, #fff);
       font-family: Avanti;
-      font-size: 18px;
+      font-size: 1.8rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 130%; /* 23.4px */
+      line-height: 130%; /* 2.34rem */
     }
     // .reviews-block__bottom
     &__bottom {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 2rem;
     }
     // .reviews-block__title
     &__title {
