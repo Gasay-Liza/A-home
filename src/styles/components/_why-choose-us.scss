@@ -1,16 +1,18 @@
 .why-choose-us {
     width: 100%;
-    max-width: 1880px;
+    max-width: 188rem;
+    background: $grey;
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 4rem;
 
     // .why-choose-us__inner 
     &__inner {
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 50px 70px;
+        padding: 5rem 7rem;
     }
 
     // .why-choose-us__top
@@ -18,48 +20,72 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center
     }
 
     // .why-choose-us__call-btn 
-    &__call-btn{
+    &__call-btn {
         @extend .call-btn;
+
         &:hover {
             .why-choose-us__call-icon {
-              >svg {
-                transform: rotate(30deg);
-              }
+                >svg {
+                    transform: rotate(30deg);
+                }
             }
-          }
+        }
     }
+
     // .why-choose-us__call-icon 
-    &__call-icon{
+    &__call-icon {
         @include call-icon($l-green);
     }
 
     // .why-choose-us__call-frame 
-    &__call-frame{
+    &__call-frame {
         @extend .call-frame;
     }
 
     // .why-choose-us__title
     &__title {
-    @include title($black, $drukcyr)
+        @include title($black, $drukcyr)
     }
 
     // .why-choose-us__blocks 
     &__blocks {
-        margin-top: 50px;
+        margin-top: 5rem;
         display: flex;
-        flex-direction: column;
-        gap: 30px;
+        flex-direction: row;
+        gap: 3rem;
     }
 
     // .why-choose-us__block 
     &__block {
+        position: relative;
+        width: 100%;
+        max-width: 41.3rem;
+        height: 54.2rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 40px 40px 50px 50px;
+        padding: 4rem 4rem 5rem 5rem;
+        background-image: url(./../utils/img/why-choose-us-background.svg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        >span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 13.6rem;
+            height: 13.6rem;
+            border-radius: 2.4rem;
+            background: #FAFAFA;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 
     // .why-choose-us__number 
@@ -67,7 +93,7 @@
         margin-left: auto;
         color: $black;
         font-family: $avanti;
-        font-size: 16px;
+        font-size: 1.6rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
@@ -78,7 +104,7 @@
     &__text-container {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 2rem;
     }
 
     // .why-choose-us__block-title
