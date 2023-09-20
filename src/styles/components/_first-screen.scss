@@ -176,6 +176,9 @@
 
     >.container {
       display: flex;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100%;
       opacity: 1;
     }
   }
@@ -231,8 +234,10 @@
     width: 41.3rem;
     height: 34.5rem;
     flex-shrink: 0;
+    padding:  0 0;
     background-image: url(../utils/img/background-container.svg);
-    background-position: center center;
+    background-position: right 0 top 0;
+    border-radius: 4rem;
     background-repeat: no-repeat;
     background-size: cover;
 
