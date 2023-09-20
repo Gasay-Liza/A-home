@@ -92,22 +92,12 @@
 
     // .audience__block-title
     &__block-title {
-        color: inherit;
-        font-family: $avanti;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+    @include block-subtitle(inherit, $avanti);
     }
 
     // .audience__block-text
     &__block-text {
-        color: inherit;
-        font-family: $avanti;
-        font-size: 1.8rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
+        @include block-text(inherit, $avanti)
     }
 
     @media (max-width: 48em) {
@@ -148,15 +138,5 @@
             gap: 4rem;
         }
 
-        // .audience__block-title
-        &__block-title {
-            font-size: 4rem;
-        }
-
-        // .audience__block-text
-        &__block-text {
-            font-size: 3.2rem;
-            line-height: 120%;
-        }
     }
 }

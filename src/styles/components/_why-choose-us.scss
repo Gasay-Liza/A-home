@@ -20,17 +20,30 @@
         justify-content: space-between;
     }
 
-    // .why-choose-us__btn
-    &__btn {}
+    // .why-choose-us__call-btn 
+    &__call-btn{
+        @extend .call-btn;
+        &:hover {
+            .why-choose-us__call-icon {
+              >svg {
+                transform: rotate(30deg);
+              }
+            }
+          }
+    }
+    // .why-choose-us__call-icon 
+    &__call-icon{
+        @include call-icon($l-green);
+    }
+
+    // .why-choose-us__call-frame 
+    &__call-frame{
+        @extend .call-frame;
+    }
 
     // .why-choose-us__title
     &__title {
-        color: $black;
-        font-family: $drukcyr;
-        font-size: 90px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 110%;
+    @include title($black, $drukcyr)
     }
 
     // .why-choose-us__blocks 
@@ -68,24 +81,14 @@
         gap: 20px;
     }
 
-    // .why-choose-us__block-title 
+    // .why-choose-us__block-title
     &__block-title {
-        color: $black;
-        font-family: $avanti;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        @include block-subtitle($black, $avanti);
     }
 
     // .why-choose-us__block-text
     &__block-text {
-        color: $black;
-        font-family: $avanti;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 130%;
+        @include block-text($black, $avanti)
     }
 
 }
