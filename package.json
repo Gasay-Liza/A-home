@@ -10,7 +10,7 @@
   "scripts": {
     "start": "set NODE_ENV=development && webpack serve",
     "build": "set NODE_ENV=production && webpack",
-    "deploy": "gh-pages -d dist gh-pages -d dist -r https://github.com/Gasay-Liza/A-home.git",
+    "deploy": "gh-pages -d dist -r https://github.com/Gasay-Liza/A-home.git",
     "dev": "set NODE_ENV=development && webpack serve",
     "clear": "rd /s /q dist"
   },
@@ -20,7 +20,8 @@
     "@babel/polyfill": "^7.12.1",
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.32.2",
-    "regenerator-runtime": "^0.14.0"
+    "regenerator-runtime": "^0.14.0",
+    "swiper": "^10.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.19",

@@ -7,7 +7,6 @@
   justify-content: center;
   // .reviews__inner
   &__inner {
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -34,13 +33,15 @@
     @include btn-text($white, $avanti);
   }
   .reviews-blocks {
+    width: 100%;
+    max-width: 174rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 3rem;
   }
   .reviews-block {
     width: 100%;
+    max-width: 85.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -167,5 +168,10 @@
     &__paragraph {
       @include block-text($black, $avanti);
     }
+  }
+
+  @media (max-width: 48em) {
+
+    
   }
 }
