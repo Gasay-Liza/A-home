@@ -24,6 +24,7 @@
       align-items: center;
       justify-content: space-between;
     }
+
   }
 
   // .projects__title
@@ -33,37 +34,12 @@
 
   // .projects__btn
   &__btn {
-    display: inline-flex;
-    height: 5.4rem;
-    padding: 1.2rem 2.4rem;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    flex-shrink: 0;
-    border-radius: 10rem;
-    background: $l-green;
-    > svg {
-      width: 1.1rem;
-      height: 1.2rem;
-      stroke-width: 0.2rem;
-      transition: transform 0.3s ease-in-out;
-    }
-    &:hover {
-      svg {
-        transform: translate(0.3rem, -0.4rem);
-      }
-    }
+    @include btn($l-green, $white);
   }
 
   // .projects__btn-text
   &__btn-text {
-    color: $white;
-    font-family: $avanti;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: uppercase;
+    @include btn-text($white, $avanti);
   }
 
   // .projects__list
@@ -74,6 +50,10 @@
     gap: 3rem;
     align-items: center;
     justify-content: center;
+    + .projects__btn {
+      display: none;
+      opacity: 0;
+    }
   }
 
   .project {
@@ -345,27 +325,15 @@
       }
     }
 
-    &__btn {
-      height: 8rem;
-      padding: 4.8rem 2.4rem;
-      flex-shrink: 0;
-      border-radius: 20rem;
-      > svg {
-        width: 2.2rem;
-        height: 3.2rem;
-        stroke-width: 0.3rem;
-      }
-    }
-
-    // .projects__btn-text
-    &__btn-text {
-      font-size: 2.8rem;
-    }
-
     // .projects__list
     &__list {
       flex-direction: column;
       gap: 3.2rem;
+
+      +.projects__btn {
+        display: flex;
+        opacity: 1;
+      }
     }
 
     .project {
@@ -396,7 +364,7 @@
       &__description {
         font-size: 5rem;
       }
-      
+
       // .project__about
       &__about {
         font-size: 3.2rem;
