@@ -462,36 +462,6 @@
       font-size: 4rem;
     }
 
-    &__call-btn {
-      margin-left: 0;
-      width: 37.4rem;
-      justify-content: flex-start;
-      height: 8rem;
-      padding: 0;
-    }
-
-    &__call-icon {
-      padding: 2.4rem 0 0 2.4rem;
-      width: 9.2rem;
-      height: 8rem;
-
-      >svg {
-        width: 3.2rem;
-        height: 3.2rem;
-      }
-    }
-
-    &__call-frame {
-      width: 28.4rem;
-      height: 8rem;
-      padding: 2.6rem 3.2rem;
-      justify-content: center;
-      align-items: center;
-      border-radius: 20rem;
-      // текст
-      font-size: 2.8rem;
-    }
-
     &__bottom-section {
       margin-top: auto;
       display: flex;

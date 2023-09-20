@@ -12,6 +12,7 @@
     }
 }
 
+// Кнопка с телефоном
 .call-btn {
     padding: 0 0;
     margin-left: 24.4rem;
@@ -23,6 +24,14 @@
     align-items: center;
     flex-shrink: 0;
     transition: transform 0.3s ease;
+
+    @media (max-width: 48em) {
+        margin-left: 0;
+        width: 37.4rem;
+        justify-content: flex-start;
+        height: 8rem;
+        padding: 0;
+    }
 }
 
 @mixin call-icon($color) {
@@ -42,6 +51,19 @@
 
         path {
             fill: $color;
+        }
+    }
+
+    @media (max-width: 48em) {
+        &__call-icon {
+            padding: 2.4rem 0 0 2.4rem;
+            width: 9.2rem;
+            height: 8rem;
+
+            >svg {
+                width: 3.2rem;
+                height: 3.2rem;
+            }
         }
     }
 }
@@ -66,4 +88,15 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+
+    @media (max-width: 48em) {
+        width: 28.4rem;
+        height: 8rem;
+        padding: 2.6rem 3.2rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20rem;
+        // текст
+        font-size: 2.8rem;
+      }
 }
