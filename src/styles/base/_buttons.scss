@@ -114,13 +114,13 @@
 
     @media (max-width: 48em) {
           height: 8rem;
-          padding: 4.8rem 2.4rem;
+          padding: 2.4rem 4.8rem;
           flex-shrink: 0;
           border-radius: 20rem;
           > svg {
             width: 2.2rem;
             height: 3.2rem;
-            stroke-width: 1.5rem;
+            stroke-width: 1.5;
           }
   }
 }
