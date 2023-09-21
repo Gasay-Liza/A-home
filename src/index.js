@@ -19,6 +19,7 @@ $(function () {
 const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   direction: 'horizontal',
+  spaceBetween: 30,
   breakpoints: {
     768: {
       slidesPerView: 2,

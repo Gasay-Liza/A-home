@@ -39,12 +39,10 @@
   &__btn-text {
     @include btn-text($white, $avanti);
   }
-  .reviews-slides{
-    gap 
-  }
+
+
   .reviews-slide {
     width: 100%;
-    max-width: 85.5rem;
     position: relative;
     display: flex;
     flex-direction: column;
