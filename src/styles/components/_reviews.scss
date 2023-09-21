@@ -1,6 +1,6 @@
 .reviews {
   width: 100%;
-  max-width: 174rem;
+  max-width: 177rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,8 @@
   }
   .reviews-blocks {
     width: 100%;
-    max-width: 174rem;
+    gap: 3rem;
+    max-width: 177rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
