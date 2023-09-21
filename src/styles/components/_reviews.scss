@@ -5,42 +5,44 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
   // .reviews__inner
   &__inner {
     display: flex;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
     gap: 5rem;
   }
+
   // .reviews__top-section
   &__top-section {
     width: 100%;
+    padding-right: 3rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
+
   // .reviews__title
   &__title {
     @include title($black, $drukcyr);
   }
+
   // .reviews__btn
   &__btn {
     @include btn($l-green, $white);
   }
+
   // .reviews__btn-text
   &__btn-text {
     @include btn-text($white, $avanti);
   }
-  .reviews-blocks {
-    width: 100%;
-    gap: 3rem;
-    max-width: 177rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .reviews-slides{
+    gap 
   }
-  .reviews-block {
+  .reviews-slide {
     width: 100%;
     max-width: 85.5rem;
     position: relative;
@@ -48,48 +50,66 @@
     flex-direction: column;
     justify-content: space-between;
     height: 47.8rem;
-    padding: 5rem;
     box-sizing: border-box;
-    background-color: $grey;
     border-radius: 4rem;
 
-    >span {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 33.3rem;
-        height: 15.7rem;
-        border-radius: 2.6rem;
-        background-color: $white;
-        &:before {
-            content: '';
-            position: absolute;
-            right: 100%;
-            top: 0;
-            width: 10rem;
-            height: 10rem;
-            border-radius: 0 2.6rem 0 0;
-            box-shadow: 1rem -1rem 0 1rem $white;
-        }
-    
-        &:after {
-            content: '';
-            position: absolute;
-            top: 100%;
-            right: 0;
-            width: 10rem;
-            height: 10rem;
-            border-radius: 0 2.6rem 0 0;
-            box-shadow: 1rem -1rem 0 1rem $white;
-        }
+    &__wrapper {
+      border-radius: 4rem;
+      padding: 5rem;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      background-color: $grey;
+
+      >svg {
+        width: 15.2rem;
+        height: 14rem;
+      }
     }
-    // .reviews-block__top
+
+    >span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 33.3rem;
+      height: 15.7rem;
+      border-radius: 2.6rem;
+      background-color: $white;
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        top: 0;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 0 2.6rem 0 0;
+        box-shadow: 1rem -1rem 0 1rem $white;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 10rem;
+        height: 10rem;
+        border-radius: 0 2.6rem 0 0;
+        box-shadow: 1rem -1rem 0 1rem $white;
+      }
+    }
+
+    // .reviews-slide__top
     &__top {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
     }
-    // .reviews-block__author
+
+    // .reviews-slide__author
     &__author-block {
       position: absolute;
       top: 0;
@@ -106,7 +126,7 @@
       gap: 2rem;
     }
 
-    // .reviews-block__author-icon
+    // .reviews-slide__author-icon
     &__author-icon {
       width: 6.6rem;
       height: 6.6rem;
@@ -124,14 +144,16 @@
       background-color: #88d4ff;
       border-radius: 50%;
     }
-    // .reviews-block__text-section
+
+    // .reviews-slide__text-section
     &__text-section {
       display: flex;
       flex-direction: column;
       gap: 1.2rem;
       justify-content: center;
     }
-    // .reviews-block__name
+
+    // .reviews-slide__name
     &__name {
       width: 100%;
       max-width: 17.5rem;
@@ -146,33 +168,116 @@
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    // .reviews-block__date
+
+    // .reviews-slide__date
     &__date {
-      color: var(--, #fff);
-      font-family: Avanti;
+      color: $white;
+      font-family: $avanti;
       font-size: 1.8rem;
       font-style: normal;
       font-weight: 400;
-      line-height: 130%; /* 2.34rem */
+      line-height: 130%;
+      /* 2.34rem */
     }
-    // .reviews-block__bottom
+
+    // .reviews-slide__bottom
     &__bottom {
       display: flex;
       flex-direction: column;
       gap: 2rem;
     }
-    // .reviews-block__title
+
+    // .reviews-slide__title
     &__title {
       @include block-subtitle($black, $avanti);
     }
-    // .reviews-block__paragraph
+
+    // .reviews-slide__paragraph
     &__paragraph {
       @include block-text($black, $avanti);
     }
   }
 
   @media (max-width: 48em) {
+    max-width: 67rem;
 
-    
+    // .reviews__btn
+    &__btn {
+      opacity: 0;
+      display: none;
+    }
+
+    &__inner {
+      gap: 6rem;
+    }
+
+    .reviews-slide {
+      height: 80rem;
+      max-width: 67rem;
+      border-radius: 4rem;
+      gap: 1.6rem;
+      justify-content: flex-start;
+
+      &__wrapper {
+        border-radius: 4rem;
+        padding: 3.2rem;
+        height: 56.8rem;
+        background-color: $grey;
+
+        >svg {
+          width: 9.6rem;
+          height: 8.8rem;
+        }
+      }
+
+      >span {
+        display: none;
+      }
+
+      // .reviews-slide__author
+      &__author-block {
+        position: static;
+        width: 100%;
+        border-radius: 4rem;
+        height: 13.6rem;
+        padding: 2rem;
+        gap: 3.2rem;
+      }
+
+      // .reviews-slide__author-icon
+      &__author-icon {
+        width: 9.6rem;
+        height: 9.6rem;
+        font-size: 4rem;
+      }
+
+      // .reviews-slide__text-section
+      &__text-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+      }
+
+      // .reviews-slide__name
+      &__name {
+        width: 100%;
+        max-width: 40rem;
+        font-size: 3.6rem;
+        letter-spacing: 0.072rem;
+      }
+
+      // .reviews-slide__date
+      &__date {
+        font-size: 3.2rem;
+        line-height: 120%;
+      }
+
+      // .reviews-slide__bottom
+      &__bottom {
+        gap: 4rem;
+      }
+    }
+
   }
+
 }

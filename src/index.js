@@ -8,21 +8,20 @@ import Swiper from 'swiper';
 import 'swiper/css';
 
 $(function () {
-    // Включение и выключение бургер-меню
-    $(".header__burger-btn, .burger-menu__close-btn, .burger-menu__link, .overlay").on("click", function () {
-      $(".burger-menu").toggleClass("burger-menu_active");
-      $(".overlay").toggleClass("overlay_active");
-    });
+  // Включение и выключение бургер-меню
+  $(".header__burger-btn, .burger-menu__close-btn, .burger-menu__link, .overlay").on("click", function () {
+    $(".burger-menu").toggleClass("burger-menu_active");
+    $(".overlay").toggleClass("overlay_active");
+  });
 
 });
 
 const swiper = new Swiper('.swiper', {
-slidesPerView: 2,
+  slidesPerView: 1,
   direction: 'horizontal',
-loop: true,
-speed: 1000, 
-transform: {
-  // используйте аппаратное ускорение для улучшения производительности
-  hardwareAcceleration: true,
-},
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+  }
 });
