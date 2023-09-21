@@ -16,7 +16,18 @@ $(function () {
 
 });
 
-const swiper = new Swiper('.swiper', {
+const swiper1 = new Swiper('.swiper-stages', {
+  slidesPerView: 1.2,
+  direction: 'horizontal',
+  spaceBetween: 180,
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+    },
+  }
+});
+
+const swiper2 = new Swiper('.swiper', {
   slidesPerView: 1,
   direction: 'horizontal',
   spaceBetween: 30,
