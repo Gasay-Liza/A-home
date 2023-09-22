@@ -41,18 +41,18 @@
     }
 
     @media (max-width: 48em) {
-        &__call-icon {
-            padding: 2.4rem 0 0 2.4rem;
-            width: 9.2rem;
-            height: 8rem;
+        width: 9.2rem;
+        height: 8rem;
+        background-image: url(../utils/img/btn-call-wrapper-mobile.svg);
+        padding: 2.4rem 0 0 2.4rem;
 
-            >svg {
-                width: 3.2rem;
-                height: 3.2rem;
-            }
+        >svg {
+            width: 3.2rem;
+            height: 3.2rem;
         }
     }
 }
+
 
 .call-frame {
     display: flex;
@@ -84,7 +84,7 @@
         border-radius: 20rem;
         // текст
         font-size: 2.8rem;
-      }
+    }
 }
 
 
@@ -99,30 +99,33 @@
     flex-shrink: 0;
     border-radius: 10rem;
     background: $background-color;
-    > svg {
+
+    >svg {
         width: 1.1rem;
         height: 1.2rem;
         stroke-width: 2;
         stroke: $stroke-color;
         transition: transform 0.3s ease;
-      }
+    }
+
     &:hover {
-      svg {
-        transform: translate(0.3rem, -0.4rem);
-      }
+        svg {
+            transform: translate(0.3rem, -0.4rem);
+        }
     }
 
     @media (max-width: 48em) {
-          height: 8rem;
-          padding: 2.4rem 4.8rem;
-          flex-shrink: 0;
-          border-radius: 20rem;
-          > svg {
+        height: 8rem;
+        padding: 2.4rem 4.8rem;
+        flex-shrink: 0;
+        border-radius: 20rem;
+
+        >svg {
             width: 2.2rem;
             height: 3.2rem;
             stroke-width: 1.5;
-          }
-  }
+        }
+    }
 }
 
 @mixin btn-text($text-color, $font-style) {
@@ -135,8 +138,6 @@
     text-transform: uppercase;
 
     @media (max-width: 48em) {
-          font-size: 2.8rem;
-      }
-  }
-
-  
+        font-size: 2.8rem;
+    }
+}
