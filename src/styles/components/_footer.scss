@@ -33,32 +33,38 @@
 
     // .footer__paragraph
     &__paragraph {
-        @include block-text($black, $drukcyr);
+        @include block-text($black, $avanti);
         max-width: 31.4rem;
     }
 
     // .footer__form 
     &__form {
+        width: 100%;
+        max-width: 41.3rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        
-        
     }
 
     // .footer__input
     &__input {
+        padding: 1rem 0;
         background-color: inherit;
         border-bottom: 0.1rem solid rgba(19, 19, 19, 0.30);
         width: 100%;
-        max-width: 41.3rem;
+        color: rgba(19, 19, 19, 0.30);
+        font-family: $avanti;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
     }
 
     // .footer__btn 
     &__btn {
         @extend .call-btn;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 2rem;
     }
 
     // .footer__call-icon
@@ -94,7 +100,7 @@
         }
     }
 
- 
+
     // .footer__nav {
     &__nav {
         display: flex;
