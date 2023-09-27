@@ -423,7 +423,8 @@
 
   // мобилка
   @media (max-width: 48em) {
-    gap: 1.6rem;;
+    max-width: 67rem;
+    gap: 1.6rem;
     
     &__wrapper{
       height: 90rem;

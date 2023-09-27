@@ -1,6 +1,7 @@
 .why-choose-us {
     width: 100%;
     max-width: 188rem;
+    margin: 9rem auto 0;
     background: $grey;
     display: flex;
     flex-direction: column;
@@ -177,7 +178,9 @@
     @media (max-width: 48em) {
         max-width: 100%;
         border-radius: 4rem;
-
+        margin: 12rem auto 0;
+        max-width: 67rem;
+        
         // .why-choose-us__inner 
         &__inner {
             padding: 2rem 2rem;

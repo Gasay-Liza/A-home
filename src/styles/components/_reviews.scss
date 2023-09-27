@@ -1,4 +1,5 @@
 .reviews {
+  margin: 9rem auto 0;
   width: 100%;
   max-width: 174rem;
   display: flex;
@@ -197,6 +198,7 @@
 
   @media (max-width: 48em) {
     max-width: 67rem;
+    margin: 12rem auto 0;
 
     // .reviews__btn
     &__btn {

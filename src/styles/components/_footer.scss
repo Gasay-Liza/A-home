@@ -1,4 +1,5 @@
 .footer {
+    margin: 9rem auto 0;
     width: 100%;
     max-width: 188rem;
     display: flex;
@@ -21,20 +22,25 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         border-bottom: 0.1rem solid rgba(19, 19, 19, 0.30);
     }
 
     // .footer__title 
     &__title {
-        @include title($black, $drukcyr)
+        color: $black;
+        font-family: $drukcyr;
+        font-size: 6.4rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 110%;
     }
 
     // .footer__paragraph
     &__paragraph {
-        margin-top: 6.4rem;
+        margin-top: 1.7rem;
         @include block-text($black, $avanti);
-        max-width: 100%;
+        max-width: 31.4rem;
     }
 
     // .footer__form 
@@ -94,7 +100,7 @@
     &__column {
         display: flex;
         flex-direction: row;
-        gap: 6.4rem;
+        gap: 3.2rem;
 
         >.footer__column-number {
             display: none;
@@ -124,7 +130,7 @@
     &__nav-list {
         display: flex;
         flex-direction: row;
-        gap: 0;
+        gap: 3.2rem;
         justify-content: space-between;
     }
 
@@ -196,15 +202,27 @@
     }
 
     @media (max-width: 48em) {
-        max-width: 355rem;
+        margin: 12rem auto 0;
+        max-width: 71rem;
         gap: 2rem;
+
+        // .footer__title 
+        &__title {
+            font-size: 6.8rem;
+        }
 
         // .footer__main 
         &__main {
-            padding: 3.2rem 3.8rem;
+            padding: 3.2rem 2rem;
             display: flex;
             flex-direction: column;
             border-radius: 4rem;
+        }
+
+        // .footer__paragraph
+        &__paragraph {
+            margin-top: 6.4rem;
+            max-width: 62.8rem;
         }
 
         // .footer__top-container 
@@ -286,7 +304,7 @@
             display: flex;
             flex-direction: row;
             gap: 13.2rem;
-
+            justify-content:flex-start;
         }
 
 

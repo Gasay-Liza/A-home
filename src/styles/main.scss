@@ -13,21 +13,28 @@
 @import "components/why-choose-us";
 @import "components/reviews";
 @import "components/about-company";
-
 @import "components/footer";
 
-.body{
+.body {
     margin: 2rem 2rem;
 }
 
-.swiper{
+.swiper {
     width: 100%;
     max-width: 177rem;
 }
-.swiper-slide{
+
+.swiper-slide {
     // margin-right: 3rem;
 }
 
 .swiper-slide {
     transition: all 0.3s ease-in-out;
-  }
+}
+
+section {
+    margin-bottom: 0;
+    @media (max-width: 48em) {
+        margin-top: 12rem;
+    }
+}
