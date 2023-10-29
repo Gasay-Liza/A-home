@@ -20,6 +20,9 @@
 .body {
     margin: 2rem 2rem;
 }
+.main-content{
+    margin-top: 2rem;
+}
 
 .swiper {
     width: 100%;
@@ -40,3 +43,4 @@ section {
         margin-top: 12rem;
     }
 }
+@media (max-width: 48em) {}

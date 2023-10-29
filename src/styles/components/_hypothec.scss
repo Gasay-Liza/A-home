@@ -160,6 +160,16 @@
     width: 41.2rem;
     height: 34.6rem;
     padding: 3.5rem 3.5rem;
+    background-size: 4.5rem 4.5rem;
+    background-repeat: repeat;
+    background:
+    repeating-linear-gradient(
+    transparent,transparent 4.5rem, rgba(19, 19, 19, 0.30) 4.7rem
+    ),
+    repeating-linear-gradient(
+    90deg,
+    transparent,transparent 4.5rem, rgba(19, 19, 19, 0.30) 4.7rem
+    );
 
     // .container__back-wrapper
     &__back-wrapper {
@@ -194,6 +204,7 @@
 
     // .container__paragraph
     &__paragraph {
+      margin-top: 2.4rem;
       width: 22rem;
       color: $black;
       font-family: $avanti;
@@ -370,6 +381,14 @@
       width: 67rem;
       height: 40rem;
       padding: 6.4rem;
+      background:
+    repeating-linear-gradient(
+    transparent,transparent 9rem, rgba(19, 19, 19, 0.30) 9.4rem
+    ),
+    repeating-linear-gradient(
+    90deg,
+    transparent,transparent 9rem, rgba(19, 19, 19, 0.30) 9.4rem
+    );
 
       // .container__back-wrapper
       &__back-wrapper {

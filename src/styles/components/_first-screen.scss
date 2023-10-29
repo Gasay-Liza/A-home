@@ -423,7 +423,7 @@
 
   // мобилка
   @media (max-width: 48em) {
-    max-width: 67rem;
+    max-width: 71rem;
     gap: 1.6rem;
     
     &__wrapper{
@@ -481,7 +481,7 @@
 
     &__title {
       text-wrap: nowrap;
-      font-size: 13rem;
+      font-size: 12rem;
       line-height: 140%;
     }
 
@@ -489,7 +489,7 @@
       position: absolute;
       width: 22.2rem;
       height: 5.4rem;
-      bottom: 14rem;
+      bottom: 13rem;
       right: 0;
       //текст
       font-size: 2.8rem;

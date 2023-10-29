@@ -1,6 +1,6 @@
 .stages-of-construction {
-    width: 100%;
-    width: 183rem;
+  width: 100%;
+  width: 183rem;
 
   &__slide {
     position: relative;
@@ -12,7 +12,6 @@
     max-width: 115rem;
     border-radius: 3rem;
   }
-
 
   &__block {
     padding: 10rem 5rem;
@@ -55,7 +54,7 @@
       width: 3rem;
       height: 3rem;
       border-radius: 0 0 4rem 0;
-      box-shadow: 1rem 1rem 0 1rem white;
+      box-shadow: 1rem 1rem 0 1rem $white;
     }
 
     &:after {
@@ -66,16 +65,46 @@
       width: 3rem;
       height: 3rem;
       border-radius: 0 0 4rem 0;
-      box-shadow: 1rem 1rem 0 1rem white;
+      box-shadow: 1rem 1rem 0 1rem $white;
     }
   }
 
   // .stages-of-construction__btn
-  &__btn {
+
+  // .stages-of-construction__btn-wrapper
+  &__btn-wrapper{
+    border-radius: 3rem 0 0 0;
+    padding: 1rem 0 0 1rem;
+    background-color: $white;
     position: absolute;
     bottom: 0;
     right: 0;
-
+    span{
+      &:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 100%;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0 0 3rem 0;
+        box-shadow: 0.5rem 0.5rem 0 0.5rem $white;
+      }
+  
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 100%;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 0 0 3rem 0;
+        box-shadow: 0.5rem 0.5rem 0 0.5rem $white;
+      }
+    }
+  }
+  &__btn {
+  
     @include btn($l-green, $white);
     > svg {
       width: 1.1rem;
