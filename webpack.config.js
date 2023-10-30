@@ -8,14 +8,33 @@ const target = devMode ? "web" : "browserslist";
 const devtool = devMode ? "source-map" : undefined;
 const ghpages = require('gh-pages');
 
+
+const entryPoints = {
+  index: path.resolve(__dirname, './src/pages/index/index.js'),
+  main: path.resolve(__dirname, './src/pages/main/main.js'),
+  // Добавьте другие страницы здесь
+};
+  // Создаем экземпляры HtmlWebpackPlugin для каждой страницы
+  const htmlPlugins = Object.keys(entryPoints).map((entryName) => {
+    return new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, `src/pages/${entryName}/${entryName}.html`),
+      filename: `${entryName}.html`, // Имя файла для каждой страницы
+      cache: false,
+      chunks: "all", // Укажите, какой бандл связать с каждой страницей
+    });
+  });
+
 module.exports = {
   mode,
   target,
   devtool,
-  entry: path.resolve(__dirname, "src", "index.js"),
+  entry: {
+    index: path.resolve(__dirname, './src/pages/index/index.js'),
+    main: path.resolve(__dirname, './src/pages/main/main.js'),
+},
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
+    path: path.resolve(__dirname, './dist/'),
+    filename: '[name].bundle.js',
     publicPath: "",
     assetModuleFilename: "utils/img/[name].[hash:8][ext]",
     clean: true,
@@ -74,10 +93,9 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src", "index.html"),
-    }),
+    ...htmlPlugins,
     new MiniCssExtractPlugin(),
     // копируем .nojekyll из корневой директории проекта в папку dist
     new CopyWebpackPlugin({

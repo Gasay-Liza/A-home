@@ -1,6 +1,6 @@
-import "./utils/fonts/fonts.css";
-import "./styles/main.scss";
-import "./index.html";
+import "../../utils/fonts/fonts.css";
+import "../../styles/main.scss";
+import "./main.html";
 import $ from "jquery";
 // import Swiper JS
 import Swiper from "swiper";
