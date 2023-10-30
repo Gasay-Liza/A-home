@@ -12,6 +12,20 @@
     }
 }
 
+@mixin title-h3($color, $font-style) {
+    color: $color;
+    font-family: $font-style;
+    font-size: 6.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+
+    @media (max-width: 48em) {
+        font-size: 6.8rem;
+        line-height: 110%;
+    }
+}
+
 @mixin block-subtitle($color, $font-style) {
     color: $color;
     font-family: $font-style;

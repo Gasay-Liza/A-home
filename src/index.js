@@ -8,10 +8,10 @@ import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 
 // Импортируем необходимые модули для пагинации
-import { Pagination } from "swiper/modules";
+import { Pagination, Navigation } from "swiper/modules";
 
 // Подключаем модули пагинации к Swiper
-Swiper.use([Pagination]);
+Swiper.use([Pagination, Navigation]);
 
 $(function () {
   // Включение и выключение бургер-меню
@@ -32,13 +32,19 @@ $(document).on("keydown", function (event) {
   }
 });
 
-const swiperStages = new Swiper(".swiper-stages", {
+const swiperStages = new Swiper(".swiper-stages-of-construction", {
+  modules: [Navigation],
   slidesPerView: 1.2,
   direction: "horizontal",
-  spaceBetween: 180,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.stages-of-construction__btn-next',
+    prevEl: '.stages-of-construction__btn-prev',
+  },
   breakpoints: {
     768: {
       slidesPerView: 1.5,
+      spaceBetween: 180,
     },
   },
 });
