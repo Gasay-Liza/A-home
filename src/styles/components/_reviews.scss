@@ -190,7 +190,7 @@
 
     // .reviews-slide__title
     &__title {
-      @include block-subtitle($black, $avanti);
+      @include title-h5($black, $avanti);
     }
 
     // .reviews-slide__paragraph

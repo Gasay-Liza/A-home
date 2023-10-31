@@ -87,7 +87,7 @@
 
     // .audience__block-title
     &__block-title {
-    @include block-subtitle(inherit, $avanti);
+    @include title-h5(inherit, $avanti);
     }
 
     // .audience__block-text

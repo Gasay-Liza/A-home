@@ -11,6 +11,19 @@
         line-height: 110%;
     }
 }
+@mixin title-h2($color, $font-style) {
+    color: $color;
+    font-family: $font-style;
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+
+    @media (max-width: 48em) {
+        font-size: 8.8rem;
+        line-height: 110%;
+    }
+}
 
 @mixin title-h3($color, $font-style) {
     color: $color;
@@ -26,7 +39,7 @@
     }
 }
 
-@mixin block-subtitle($color, $font-style) {
+@mixin title-h5($color, $font-style) {
     color: $color;
     font-family: $font-style;
     font-size: 3rem;

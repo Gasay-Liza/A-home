@@ -167,7 +167,7 @@
 
     // .why-choose-us__block-title
     &__block-title {
-        @include block-subtitle($black, $avanti);
+        @include title-h5($black, $avanti);
     }
 
     // .why-choose-us__block-text

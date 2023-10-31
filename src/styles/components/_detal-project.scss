@@ -1,0 +1,134 @@
+.detal-project {
+    width: 100%;
+    max-width: 188rem;
+    height: 64.7rem;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+    // .detal-project__img-wrapper 
+    &__img-wrapper {
+        width: 77.8rem;
+        height: 64.7rem;
+        object-fit: cover;
+        border-radius: 4rem;
+
+        >img {
+            width: 100%;
+            height: 100%;
+            border-radius: 4rem;
+        }
+    }
+
+    // .detal-project__text-container 
+    &__text-container {
+        width: 107.2rem;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        padding: 5rem 7rem;
+        border-radius: 4rem;
+        background: $grey;
+    }
+
+    // .detal-project__title-h2
+    &__title-h2 {
+        @include title-h2($black, $drukcyr);
+    }
+
+    // .detal-project__middle-container
+    &__middle-container {
+        margin-top: 5rem;
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+
+    // .detal-project__characteristics
+    &__characteristics {
+        width: 36.2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+    }
+
+    // .detal-project__characteristic
+    &__characteristic {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    // .detal-project__characteristic-title-h5 
+    &__characteristic-title-h5 {
+        @include title-h5($black, $avanti);
+    }
+
+    // .detal-project__characteristic-text 
+    &__characteristic-text {
+        @include block-text($black, $avanti);
+    }
+
+    // .detal-project__description 
+    &__description {
+        width: 51rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    // .detal-project__description-title-h5 
+    &__description-title-h5 {
+        @include title-h5($black, $avanti);
+    }
+
+    // .detal-project__description-text 
+    &__description-text {
+        @include block-text($black, $avanti);
+    }
+
+    // .detal-project__footer
+    &__footer {
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    // .detal-project__price
+    &__price {
+        color: #65C82B;
+        font-family: Avanti;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+
+        &::after {
+            content: " ₽";
+            color: #65C82B;
+            font-family: $avanti;
+            font-size: 2.6rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+        }
+    }
+
+    // .detal-project__call-btn 
+    &__call-btn {
+        @extend .call-btn;
+    }
+
+    // .detal-project__call-icon
+    &__call-icon {
+        @include call-icon($l-green);
+    }
+
+    // .detal-project__call-frame 
+    &__call-frame {
+        @extend .call-frame;
+    }
+}

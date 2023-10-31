@@ -10,28 +10,31 @@ const ghpages = require('gh-pages');
 
 
 const entryPoints = {
-  index: path.resolve(__dirname, './src/pages/index/index.js'),
-  main: path.resolve(__dirname, './src/pages/main/main.js'),
+  "index": path.resolve(__dirname, './src/pages/index/index.js'),
+  "main": path.resolve(__dirname, './src/pages/main/main.js'),
+  "projects": path.resolve(__dirname, './src/pages/projects/projects.js'),
+  "detal-project": path.resolve(__dirname, './src/pages/detal-project/detal-project.js'),
+  "services": path.resolve(__dirname, './src/pages/services/services.js'),
+  "detal-services": path.resolve(__dirname, './src/pages/detal-services/detal-services.js'),
+  "about": path.resolve(__dirname, './src/pages/about/about.js'),
+
   // Добавьте другие страницы здесь
 };
-  // Создаем экземпляры HtmlWebpackPlugin для каждой страницы
-  const htmlPlugins = Object.keys(entryPoints).map((entryName) => {
-    return new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, `src/pages/${entryName}/${entryName}.html`),
-      filename: `${entryName}.html`, // Имя файла для каждой страницы
-      cache: false,
-      chunks: "all", // Укажите, какой бандл связать с каждой страницей
-    });
+// Создаем экземпляры HtmlWebpackPlugin для каждой страницы
+const htmlPlugins = Object.keys(entryPoints).map((entryName) => {
+  return new HtmlWebpackPlugin({
+    template: path.resolve(__dirname, `src/pages/${entryName}/${entryName}.html`),
+    filename: `${entryName}.html`, // Имя файла для каждой страницы
+    cache: false,
+    chunks: "all", // Укажите, какой бандл связать с каждой страницей
   });
+});
 
 module.exports = {
   mode,
   target,
   devtool,
-  entry: {
-    index: path.resolve(__dirname, './src/pages/index/index.js'),
-    main: path.resolve(__dirname, './src/pages/main/main.js'),
-},
+  entry: entryPoints,
   output: {
     path: path.resolve(__dirname, './dist/'),
     filename: '[name].bundle.js',
