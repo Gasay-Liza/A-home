@@ -26,7 +26,6 @@ const htmlPlugins = Object.keys(entryPoints).map((entryName) => {
     template: path.resolve(__dirname, `src/pages/${entryName}/${entryName}.html`),
     filename: `${entryName}.html`, // Имя файла для каждой страницы
     cache: false,
-    chunks: "all", // Укажите, какой бандл связать с каждой страницей
   });
 });
 
@@ -38,7 +37,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, './dist/'),
     filename: '[name].bundle.js',
-    publicPath: "",
+    publicPath: "/",
     assetModuleFilename: "utils/img/[name].[hash:8][ext]",
     clean: true,
   },
@@ -84,11 +83,9 @@ module.exports = {
           mode ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
           {
-            loader: "postcss-loader",
+            loader: "sass-loader",
             options: {
-              postcssOptions: {
-                plugins: [require("postcss-preset-env")],
-              },
+              sourceMap: true,
             },
           },
           "sass-loader",
@@ -99,7 +96,7 @@ module.exports = {
 
   plugins: [
     ...htmlPlugins,
-    new MiniCssExtractPlugin(),
+    new MiniCssExtractPlugin({ filename: "css/[name].css"}),
     // копируем .nojekyll из корневой директории проекта в папку dist
     new CopyWebpackPlugin({
       patterns: [

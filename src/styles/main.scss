@@ -13,10 +13,11 @@
 @import "components/stages-of-construction";
 @import "components/hypothec";
 @import "components/projects";
+@import "components/projects-page";
 @import "components/why-choose-us";
 @import "components/reviews";
 @import "components/about-company";
-@import "components/detal-project";
+@import "components/projects";
 @import "components/services";
 @import "components/questions";
 
@@ -91,4 +92,11 @@ section {
     }
 }
 
+.accordion-content{
+    display: none;
+}
+
+.accordion-content.active{
+    display: block;
+}
 @media (max-width: 48em) {}

@@ -74,13 +74,28 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        transition: color 0.2s ease-in-out;
+        
         button{
-            @include accordion-button
+            @include accordion-button($white,$black);
+            svg{
+                transition: rotate 0.2s ease-in-out;
+            }
         }
         @include title-h5($black, $drukcyr);
+        &.active{
+            @include title-h5($l-blue, $drukcyr);
+            button{
+                @include accordion-button($l-green,$white);
+                svg {
+                   rotate: 90deg;
+                }
+            }
+            
+        }
     }
 
-    // .questions__accordion-content
     // .accordion-content
     // .questions__content-header
     &__content-header {
