@@ -3,78 +3,78 @@
   \***************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "Avanti";
-  src: url(/utils/fonts/avanti.eot);
-  src: url(/utils/fonts/avanti.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/avanti.otf) format("opentype"), url(/utils/img/avanti.545a7cde.svg) format("svg"), url(/utils/fonts/avanti.ttf) format("truetype"), url(/utils/fonts/avanti.woff) format("woff"), url(/utils/fonts/avanti.woff2) format("woff2");
+  src: url(../utils/fonts/avanti.eot);
+  src: url(../utils/fonts/avanti.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/avanti.otf) format("opentype"), url(../utils/img/avanti.545a7cde.svg) format("svg"), url(../utils/fonts/avanti.ttf) format("truetype"), url(../utils/fonts/avanti.woff) format("woff"), url(../utils/fonts/avanti.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Avanti";
-  src: url(/utils/fonts/avanti-bold.eot);
-  src: url(/utils/fonts/avanti-bold.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/avanti-bold.otf) format("opentype"), url(/utils/fonts/avanti-bold.ttf) format("truetype"), url(/utils/fonts/avanti-bold.woff) format("woff"), url(/utils/fonts/avanti-bold.woff2) format("woff2");
+  src: url(../utils/fonts/avanti-bold.eot);
+  src: url(../utils/fonts/avanti-bold.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/avanti-bold.otf) format("opentype"), url(../utils/fonts/avanti-bold.ttf) format("truetype"), url(../utils/fonts/avanti-bold.woff) format("woff"), url(../utils/fonts/avanti-bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-Bold.eot);
-  src: local("Druk Cyr Bold"), local("DrukCyr-Bold"), url(/utils/fonts/DrukCyr-Bold.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-Bold.woff2) format("woff2"), url(/utils/fonts/DrukCyr-Bold.woff) format("woff"), url(/utils/fonts/DrukCyr-Bold.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-Bold.eot);
+  src: local("Druk Cyr Bold"), local("DrukCyr-Bold"), url(../utils/fonts/DrukCyr-Bold.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-Bold.woff2) format("woff2"), url(../utils/fonts/DrukCyr-Bold.woff) format("woff"), url(../utils/fonts/DrukCyr-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-Bold.eot);
-  src: local("Druk Cyr Bold"), local("DrukCyr-Bold"), url(/utils/fonts/DrukCyr-Bold.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-Bold.woff2) format("woff2"), url(/utils/fonts/DrukCyr-Bold.woff) format("woff"), url(/utils/fonts/DrukCyr-Bold.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-Bold.eot);
+  src: local("Druk Cyr Bold"), local("DrukCyr-Bold"), url(../utils/fonts/DrukCyr-Bold.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-Bold.woff2) format("woff2"), url(../utils/fonts/DrukCyr-Bold.woff) format("woff"), url(../utils/fonts/DrukCyr-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-Heavy.eot);
-  src: local("Druk Cyr Heavy"), local("DrukCyr-Heavy"), url(/utils/fonts/DrukCyr-Heavy.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-Heavy.woff2) format("woff2"), url(/utils/fonts/DrukCyr-Heavy.woff) format("woff"), url(/utils/fonts/DrukCyr-Heavy.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-Heavy.eot);
+  src: local("Druk Cyr Heavy"), local("DrukCyr-Heavy"), url(../utils/fonts/DrukCyr-Heavy.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-Heavy.woff2) format("woff2"), url(../utils/fonts/DrukCyr-Heavy.woff) format("woff"), url(../utils/fonts/DrukCyr-Heavy.ttf) format("truetype");
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-HeavyItalic.eot);
-  src: local("Druk Cyr Heavy Italic"), local("DrukCyr-HeavyItalic"), url(/utils/fonts/DrukCyr-HeavyItalic.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-HeavyItalic.woff2) format("woff2"), url(/utils/fonts/DrukCyr-HeavyItalic.woff) format("woff"), url(/utils/fonts/DrukCyr-HeavyItalic.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-HeavyItalic.eot);
+  src: local("Druk Cyr Heavy Italic"), local("DrukCyr-HeavyItalic"), url(../utils/fonts/DrukCyr-HeavyItalic.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-HeavyItalic.woff2) format("woff2"), url(../utils/fonts/DrukCyr-HeavyItalic.woff) format("woff"), url(../utils/fonts/DrukCyr-HeavyItalic.ttf) format("truetype");
   font-weight: 900;
   font-style: italic;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-MediumItalic.eot);
-  src: local("Druk Cyr Medium Italic"), local("DrukCyr-MediumItalic"), url(/utils/fonts/DrukCyr-MediumItalic.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-MediumItalic.woff2) format("woff2"), url(/utils/fonts/DrukCyr-MediumItalic.woff) format("woff"), url(/utils/fonts/DrukCyr-MediumItalic.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-MediumItalic.eot);
+  src: local("Druk Cyr Medium Italic"), local("DrukCyr-MediumItalic"), url(../utils/fonts/DrukCyr-MediumItalic.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-MediumItalic.woff2) format("woff2"), url(../utils/fonts/DrukCyr-MediumItalic.woff) format("woff"), url(../utils/fonts/DrukCyr-MediumItalic.ttf) format("truetype");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-SuperItalic.eot);
-  src: local("Druk Cyr Super Italic"), local("DrukCyr-SuperItalic"), url(/utils/fonts/DrukCyr-SuperItalic.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-SuperItalic.woff2) format("woff2"), url(/utils/fonts/DrukCyr-SuperItalic.woff) format("woff"), url(/utils/fonts/DrukCyr-SuperItalic.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-SuperItalic.eot);
+  src: local("Druk Cyr Super Italic"), local("DrukCyr-SuperItalic"), url(../utils/fonts/DrukCyr-SuperItalic.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-SuperItalic.woff2) format("woff2"), url(../utils/fonts/DrukCyr-SuperItalic.woff) format("woff"), url(../utils/fonts/DrukCyr-SuperItalic.ttf) format("truetype");
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-Super.eot);
-  src: local("Druk Cyr Super"), local("DrukCyr-Super"), url(/utils/fonts/DrukCyr-Super.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-Super.woff2) format("woff2"), url(/utils/fonts/DrukCyr-Super.woff) format("woff"), url(/utils/fonts/DrukCyr-Super.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-Super.eot);
+  src: local("Druk Cyr Super"), local("DrukCyr-Super"), url(../utils/fonts/DrukCyr-Super.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-Super.woff2) format("woff2"), url(../utils/fonts/DrukCyr-Super.woff) format("woff"), url(../utils/fonts/DrukCyr-Super.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-Medium.eot);
-  src: local("Druk Cyr Medium"), local("DrukCyr-Medium"), url(/utils/fonts/DrukCyr-Medium.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-Medium.woff2) format("woff2"), url(/utils/fonts/DrukCyr-Medium.woff) format("woff"), url(/utils/fonts/DrukCyr-Medium.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-Medium.eot);
+  src: local("Druk Cyr Medium"), local("DrukCyr-Medium"), url(../utils/fonts/DrukCyr-Medium.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-Medium.woff2) format("woff2"), url(../utils/fonts/DrukCyr-Medium.woff) format("woff"), url(../utils/fonts/DrukCyr-Medium.ttf) format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Druk Cyr";
-  src: url(/utils/fonts/DrukCyr-BoldItalic.eot);
-  src: local("Druk Cyr Bold Italic"), local("DrukCyr-BoldItalic"), url(/utils/fonts/DrukCyr-BoldItalic.eot?#iefix) format("embedded-opentype"), url(/utils/fonts/DrukCyr-BoldItalic.woff2) format("woff2"), url(/utils/fonts/DrukCyr-BoldItalic.woff) format("woff"), url(/utils/fonts/DrukCyr-BoldItalic.ttf) format("truetype");
+  src: url(../utils/fonts/DrukCyr-BoldItalic.eot);
+  src: local("Druk Cyr Bold Italic"), local("DrukCyr-BoldItalic"), url(../utils/fonts/DrukCyr-BoldItalic.eot?#iefix) format("embedded-opentype"), url(../utils/fonts/DrukCyr-BoldItalic.woff2) format("woff2"), url(../utils/fonts/DrukCyr-BoldItalic.woff) format("woff"), url(../utils/fonts/DrukCyr-BoldItalic.ttf) format("truetype");
   font-weight: bold;
   font-style: italic;
 }
@@ -600,7 +600,7 @@ section {
   padding: 1.8rem 0 0 1.8rem;
   width: 6.6rem;
   height: 5.7rem;
-  background-image: url(/utils/img/btn-call-wrapper.f0e5ee2f.svg);
+  background-image: url(../utils/img/btn-call-wrapper.f0e5ee2f.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -620,7 +620,7 @@ section {
   .footer__call-icon {
     width: 9.2rem;
     height: 8rem;
-    background-image: url(/utils/img/btn-call-wrapper-mobile.bc8cf367.svg);
+    background-image: url(../utils/img/btn-call-wrapper-mobile.bc8cf367.svg);
     padding: 2.4rem 0 0 2.4rem;
   }
   .footer__call-icon > svg {
@@ -922,7 +922,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/utils/img/btn-with-text.22f64483.svg);
+  background-image: url(../utils/img/btn-with-text.22f64483.svg);
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -990,7 +990,7 @@ section {
   padding: 1.8rem 0 0 1.8rem;
   width: 6.6rem;
   height: 5.7rem;
-  background-image: url(/utils/img/btn-call-wrapper.f0e5ee2f.svg);
+  background-image: url(../utils/img/btn-call-wrapper.f0e5ee2f.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1010,7 +1010,7 @@ section {
   .first-screen__call-icon {
     width: 9.2rem;
     height: 8rem;
-    background-image: url(/utils/img/btn-call-wrapper-mobile.bc8cf367.svg);
+    background-image: url(../utils/img/btn-call-wrapper-mobile.bc8cf367.svg);
     padding: 2.4rem 0 0 2.4rem;
   }
   .first-screen__call-icon > svg {
@@ -1085,7 +1085,7 @@ section {
   height: 34.5rem;
   flex-shrink: 0;
   padding: 0 0;
-  background-image: url(/utils/img/background-container.e11bc5ce.svg);
+  background-image: url(../utils/img/background-container.e11bc5ce.svg);
   background-position: right 0 top 0;
   border-radius: 4rem;
   background-repeat: no-repeat;
@@ -1334,7 +1334,7 @@ section {
     width: 100%;
     max-width: 100%;
     height: 43.2rem;
-    background-image: url(/utils/img/mobile-background-container.fada7540.svg);
+    background-image: url(../utils/img/mobile-background-container.fada7540.svg);
   }
   .first-screen .container__top {
     gap: 0;
@@ -1631,7 +1631,7 @@ section {
   padding: 5rem;
   grid-column: 1/span 1;
   grid-row: 1/span 3;
-  background-image: url(/utils/img/audience-svg-background.466b8fe7.svg);
+  background-image: url(../utils/img/audience-svg-background.466b8fe7.svg);
   background-position: left 0 bottom 0;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1730,7 +1730,7 @@ section {
   }
   .audience__block:first-of-type {
     padding: 3.2rem;
-    background-image: url(/utils/img/audience-svg-background-mobile.88a2b4aa.svg);
+    background-image: url(../utils/img/audience-svg-background-mobile.88a2b4aa.svg);
     background-position: right 0 top 0;
     background-size: 18.2rem 24.6rem;
   }
@@ -3506,7 +3506,7 @@ section {
   padding: 1.8rem 0 0 1.8rem;
   width: 6.6rem;
   height: 5.7rem;
-  background-image: url(/utils/img/btn-call-wrapper.f0e5ee2f.svg);
+  background-image: url(../utils/img/btn-call-wrapper.f0e5ee2f.svg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -3526,7 +3526,7 @@ section {
   .why-choose-us__call-icon {
     width: 9.2rem;
     height: 8rem;
-    background-image: url(/utils/img/btn-call-wrapper-mobile.bc8cf367.svg);
+    background-image: url(../utils/img/btn-call-wrapper-mobile.bc8cf367.svg);
     padding: 2.4rem 0 0 2.4rem;
   }
   .why-choose-us__call-icon > svg {
