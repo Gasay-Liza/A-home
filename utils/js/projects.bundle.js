@@ -202,7 +202,7 @@ eval("module.exports = __webpack_require__.p + \"utils/img/project3.c7ccfe9f.jpg
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	!function() {
-/******/ 		__webpack_require__.p = "../";
+/******/ 		__webpack_require__.p = "./";
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
