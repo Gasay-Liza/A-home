@@ -26,6 +26,7 @@ const htmlPlugins = Object.keys(entryPoints).map((entryName) => {
     template: path.resolve(__dirname, `src/pages/${entryName}/${entryName}.html`),
     filename: `${entryName}.html`, // Имя файла для каждой страницы
     cache: false,
+    chunks: "all",
   });
 });
 
@@ -33,12 +34,12 @@ module.exports = {
   mode,
   target,
   devtool,
-  entry: entryPoints,
+  entry: {main: path.resolve(__dirname, "./src/pages/index/index.js")},
+  // entry: entryPoints,
   output: {
     path: path.resolve(__dirname, './dist/'),
-    filename: '[name].bundle.js',
-    publicPath: "../",
-    assetModuleFilename: "utils/img/[name].[hash:8][ext]",
+    filename: 'src/js/[name].[contenthash].bundle.js',
+    assetModuleFilename: "src/utils/img/[name].[hash:8][ext]",
     clean: true,
   },
   performance: {
@@ -47,7 +48,7 @@ module.exports = {
   },
   mode: "development",
   devServer: {
-    static: path.resolve(__dirname, "./dist"),
+    static: path.resolve(__dirname, "./dist/"),
     compress: true,
     port: 3000,
     open: true,
@@ -69,7 +70,7 @@ module.exports = {
         test: /\.(woff(2)?|eot|ttf|otf)$/i,
         type: "asset/resource",
         generator: {
-          filename: "utils/fonts/[name][ext]",
+          filename: "src/utils/fonts/[name][ext]",
         },
       },
       {
@@ -80,15 +81,22 @@ module.exports = {
       {
         test: /\.(c|sa|sc|)ss$/i,
         use: [
-          mode ? "style-loader" : MiniCssExtractPlugin.loader,
+          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [require("postcss-preset-env")],
+              },
+            },
+          },
           {
             loader: "sass-loader",
             options: {
               sourceMap: true,
             },
           },
-          "sass-loader",
         ],
       },
     ],
@@ -96,7 +104,7 @@ module.exports = {
 
   plugins: [
     ...htmlPlugins,
-    new MiniCssExtractPlugin({ filename: "css/[name].css"}),
+    new MiniCssExtractPlugin({ filename: "src/css/[name].[contenthash].css",}),
     // копируем .nojekyll из корневой директории проекта в папку dist
     new CopyWebpackPlugin({
       patterns: [

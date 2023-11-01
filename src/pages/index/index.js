@@ -1,1 +1,9 @@
 import "./index.html";
+import "../main/main.js";
+import "../projects/projects.js";
+import "../services/services.js";
+import "../detal-services/detal-services.js";
+import "../detal-project/detal-project.js";
+import "../detal-article/detal-article.js";
+import "../about/about.js";
+import "../404/404.js";

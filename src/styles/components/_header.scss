@@ -6,23 +6,33 @@
   justify-content: center;
   box-sizing: border-box;
   width: 100%;
+
   &_type_white-absolute {
     z-index: 10;
     position: absolute;
     top: 5rem;
+
     .header__nav-list-link {
       color: $white;
     }
+
     .header__number {
       color: $black;
       background: $white;
     }
+
     .header__text {
       color: $white;
     }
+
     .header__inner_desktop {
       padding: 0 7rem;
       max-width: 188rem;
+    }
+
+    .header__logo-link {
+      width: 24.1rem;
+      height: 9rem;
     }
 
     .header__inner_mobile {
@@ -113,16 +123,19 @@
   @media (max-width: 48em) {
     margin-top: 4rem;
     max-width: 67rem;
+
     &__inner {
       &_desktop {
         opacity: 0;
         display: none;
       }
+
       &_mobile {
         width: 100%;
         max-width: 100%;
         display: flex;
         opacity: 1;
+
         // .header__inner_mobile .header__logo-link (мобильный логотип)
         .header__logo-link {
           width: 34.6rem;
@@ -132,10 +145,11 @@
     }
 
     &__burger-btn {
-      > svg {
+      >svg {
         width: 4.8rem;
         height: 3.2rem;
         transition: transform 0.3s ease;
+
         &:hover {
           opacity: 0.8;
         }
@@ -143,7 +157,7 @@
     }
 
     &__call-link {
-      > svg {
+      >svg {
         width: 4rem;
         height: 4rem;
         fill: $white;

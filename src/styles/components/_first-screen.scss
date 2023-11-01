@@ -205,8 +205,8 @@
   &__label {
     position: absolute;
     width: 18.9rem;
-    bottom: 16.888rem;
-    right: 9.78rem;
+    bottom: 18.6rem;
+    right: 10.1rem;
     //текст
     color: $white;
     font-family: $avanti;
@@ -214,13 +214,14 @@
     font-style: normal;
     font-weight: 700;
     line-height: 120%;
+    vertical-align: bottom;
     text-transform: uppercase;
     //обертка
     border-radius: 10rem;
     background: $l-green;
     display: inline-flex;
     transform: rotate(-10.346deg);
-    padding: 0.8rem 2rem 1rem 2rem;
+    padding: 1.1rem 2rem 0.8rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
