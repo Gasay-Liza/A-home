@@ -38,6 +38,9 @@
     .header__inner_mobile {
       padding: 0 4rem;
     }
+    @media (max-width: 48em) {
+      left: 2rem;
+    }
   }
 
   &__inner {
@@ -122,7 +125,7 @@
 
   @media (max-width: 48em) {
     margin-top: 4rem;
-    max-width: 67rem;
+    max-width: 71rem;
 
     &__inner {
       &_desktop {
