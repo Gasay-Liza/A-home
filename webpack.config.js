@@ -1,4 +1,5 @@
 const path = require("path");
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
@@ -8,7 +9,6 @@ const target = devMode ? "web" : "browserslist";
 const devtool = devMode ? "source-map" : undefined;
 const ghpages = require('gh-pages');
 
-
 const entryPoints = {
   "index": path.resolve(__dirname, './src/pages/index/index.js'),
   "main": path.resolve(__dirname, './src/pages/main/main.js'),
@@ -17,6 +17,7 @@ const entryPoints = {
   "services": path.resolve(__dirname, './src/pages/services/services.js'),
   "detal-services": path.resolve(__dirname, './src/pages/detal-services/detal-services.js'),
   "about": path.resolve(__dirname, './src/pages/about/about.js'),
+  
 
   // Добавьте другие страницы здесь
 };
@@ -34,7 +35,7 @@ module.exports = {
   mode,
   target,
   devtool,
-  entry: {main: path.resolve(__dirname, "./src/pages/index/index.js")},
+  entry: {main: path.resolve(__dirname, "./src/js/index.js")},
   // entry: entryPoints,
   output: {
     path: path.resolve(__dirname, './dist/'),
@@ -101,7 +102,11 @@ module.exports = {
       },
     ],
   },
-
+  resolve: {
+    alias: {
+      'inputmask': path.resolve(__dirname, '../node_modules/inputmask/dist/inputmask'),
+    },
+  },
   plugins: [
     ...htmlPlugins,
     new MiniCssExtractPlugin({ filename: "src/css/[name].[contenthash].css",}),

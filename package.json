@@ -20,6 +20,8 @@
     "@babel/polyfill": "^7.12.1",
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.32.2",
+    "inputmask": "^5.0.8",
+    "jquery-mask-plugin": "^1.14.16",
     "regenerator-runtime": "^0.14.0",
     "swiper": "^10.3.1"
   },

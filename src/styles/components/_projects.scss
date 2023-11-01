@@ -258,9 +258,9 @@
       z-index: 100;
 
       >svg {
-        width: 1.2rem;
-        height: 1.2rem;
-        stroke-width: 0.2rem;
+        width: 12px;
+        height: 12px;
+        stroke-width: 2px;
         transition: transform 0.3s ease-in-out;
       }
 
@@ -303,9 +303,9 @@
       }
 
       >svg {
-        width: 1.2rem;
-        height: 1.2rem;
-        stroke-width: 0.2rem;
+        width: 12px;
+        height: 12px;
+        stroke-width: 2px;
         stroke: $white;
         transition: transform 0.3s ease;
       }

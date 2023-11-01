@@ -8,12 +8,30 @@
   width: 100%;
 
   &_type_white-absolute {
+    margin-top: 0;
     z-index: 10;
     position: absolute;
     top: 5rem;
 
     .header__nav-list-link {
+      position: relative;
       color: $white;
+      &:after {
+        display: block;
+        position: absolute;
+        left: 0; 
+        bottom: -0.4rem;
+        width: 0;
+        height: 0.2rem; 
+        background-color: $white; 
+        content: "";
+        transition: width 0.2s ease-out; 
+      }
+      
+      &:hover:after,
+      &:focus:after {
+        width: 100%; 
+      }
     }
 
     .header__number {
