@@ -2974,6 +2974,501 @@ section {
     transition: transform 0.3s ease;
   }
 }
+.projects-page {
+  width: 100%;
+}
+
+.projects-page .projects {
+  width: 100%;
+  max-width: 174.2rem;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-page .projects__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.projects-page .projects__inner_top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.projects-page .projects__title {
+  color: #131313;
+  font-family: "Druk Cyr";
+  font-size: 9rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+}
+
+@media (max-width: 48em) {
+  .projects-page .projects__title {
+    font-size: 8.8rem;
+    line-height: 110%;
+  }
+}
+.projects-page .projects__btn {
+  display: inline-flex;
+  height: 5.4rem;
+  padding: 1.2rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-shrink: 0;
+  border-radius: 10rem;
+  background: #65C82B;
+}
+
+.projects-page .projects__btn > svg {
+  width: 1.1rem;
+  height: 1.2rem;
+  stroke-width: 2;
+  stroke: #FFF;
+  transition: transform 0.3s ease;
+}
+
+.projects-page .projects__btn:hover svg {
+  transform: translate(0.3rem, -0.4rem);
+}
+
+@media (max-width: 48em) {
+  .projects-page .projects__btn {
+    height: 8rem;
+    padding: 2.4rem 4.8rem;
+    flex-shrink: 0;
+    border-radius: 20rem;
+  }
+  .projects-page .projects__btn > svg {
+    width: 2.2rem;
+    height: 3.2rem;
+    stroke-width: 1.5;
+  }
+}
+.projects-page .projects__btn-text {
+  color: #FFF;
+  font-family: "Avanti";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 48em) {
+  .projects-page .projects__btn-text {
+    font-size: 2.8rem;
+  }
+}
+.projects-page .projects__list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.projects-page .projects__list + .projects__btn {
+  display: none;
+  opacity: 0;
+}
+
+.projects-page .projects .project {
+  border-radius: 2.5rem 2.5rem 0 2.5rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 56rem;
+  height: 57.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 5rem;
+}
+
+.projects-page .projects .project:hover .project__shadow {
+  background-color: #65C82B;
+  opacity: 1;
+}
+
+.projects-page .projects .project:hover .project_top {
+  display: none;
+  opacity: 0;
+}
+
+.projects-page .projects .project:hover .project__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  opacity: 1;
+  color: #FFF;
+  font-family: "Avanti";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projects-page .projects .project:hover .project__description > p sup {
+  font-size: 2rem;
+}
+
+.projects-page .projects .project__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 40, 40, 0.5411764706);
+  opacity: 0.54;
+  z-index: -1;
+  transition: background-color 0.6s ease;
+}
+
+.projects-page .projects .project__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -10;
+}
+
+.projects-page .projects .project_top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.projects-page .projects .project__square {
+  display: flex;
+  width: 100%;
+  max-width: max-content;
+  padding: 1rem 2rem 0.8rem 2rem;
+  border-radius: 10rem;
+  background: #65C82B;
+  align-items: flex-start;
+  color: #FFF;
+  font-family: "Avanti";
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.projects-page .projects .project__square > sup {
+  color: #FFF;
+  font-family: "Avanti";
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.projects-page .projects .project__title {
+  color: #FFF;
+  font-family: "Druk Cyr";
+  font-size: 4.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.projects-page .projects .project__description {
+  display: none;
+  opacity: 0;
+  color: #FFF;
+  font-family: "Avanti";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.projects-page .projects .project__about {
+  color: #FFF;
+  font-family: "Avanti";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.projects-page .projects .project__btn-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.5rem;
+  height: 8.5rem;
+}
+
+.projects-page .projects .project__btn-wrapper > span {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 2.5rem 0 0 0;
+  background-color: #FFF;
+}
+
+.projects-page .projects .project__btn-wrapper > span:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 8.5rem;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 0 0 2.5rem 0;
+  box-shadow: 4rem 2rem 0 2rem #FFF;
+}
+
+.projects-page .projects .project__btn-wrapper > span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 8.5rem;
+  width: 8.5rem;
+  height: 8.5rem;
+  border-radius: 0 0 2.5rem 0;
+  box-shadow: 2rem 4rem 0 2rem #FFF;
+}
+
+.projects-page .projects .project__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #65C82B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.projects-page .projects .project__btn > svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke-width: 0.2rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.projects-page .projects .project__btn:hover svg {
+  transform: translate(0.3rem, -0.4rem);
+}
+
+.projects-page .projects .project__btn > span {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 2rem 0 0 0;
+  background-color: #FFF;
+}
+
+.projects-page .projects .project__btn > span:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 7rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0 0 2rem 0;
+  box-shadow: 4rem 2rem 0 2rem #FFF;
+}
+
+.projects-page .projects .project__btn > span:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 7rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 0 0 2rem 0;
+  box-shadow: 2rem 4rem 0 2rem #FFF;
+}
+
+.projects-page .projects .project__btn > svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke-width: 0.2rem;
+  stroke: #FFF;
+  transition: transform 0.3s ease;
+}
+
+.projects-page .projects__load-more-btn {
+  margin-top: 5rem;
+  display: inline-flex;
+  height: 5.4rem;
+  padding: 1.2rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  flex-shrink: 0;
+  border-radius: 10rem;
+  background: #65C82B;
+}
+
+.projects-page .projects__load-more-btn > svg {
+  width: 1.1rem;
+  height: 1.2rem;
+  stroke-width: 2;
+  stroke: #FFF;
+  transition: transform 0.3s ease;
+}
+
+.projects-page .projects__load-more-btn:hover svg {
+  transform: translate(0.3rem, -0.4rem);
+}
+
+@media (max-width: 48em) {
+  .projects-page .projects__load-more-btn {
+    height: 8rem;
+    padding: 2.4rem 4.8rem;
+    flex-shrink: 0;
+    border-radius: 20rem;
+  }
+  .projects-page .projects__load-more-btn > svg {
+    width: 2.2rem;
+    height: 3.2rem;
+    stroke-width: 1.5;
+  }
+}
+.projects-page .projects__load-more-btn:hover svg {
+  transform: translate(0, 0.4rem);
+}
+
+.projects-page .projects__btn-text {
+  color: #FFF;
+  font-family: "Avanti";
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+@media (max-width: 48em) {
+  .projects-page .projects__btn-text {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 48em) {
+  .projects-page .projects {
+    width: 100%;
+    max-width: 67rem;
+    margin: 4rem auto 0;
+  }
+  .projects-page .projects__inner {
+    gap: 6rem;
+  }
+  .projects-page .projects__inner_top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects-page .projects__inner_top > a:first-of-type {
+    display: none;
+    opacity: 0;
+  }
+  .projects-page .projects__list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.2rem;
+  }
+  .projects-page .projects .project {
+    border-radius: 4rem 4rem 0 4rem;
+    max-width: 100%;
+    height: 59.2rem;
+    padding: 3.2rem;
+  }
+  .projects-page .projects .project_top {
+    gap: 2rem;
+  }
+  .projects-page .projects .project__square {
+    padding: 2rem 4rem 1.6rem;
+    border-radius: 20rem;
+    font-size: 2.8rem;
+  }
+  .projects-page .projects .project__title {
+    font-size: 5.6rem;
+    line-height: 90%;
+  }
+  .projects-page .projects .project__description {
+    font-size: 5rem;
+  }
+  .projects-page .projects .project__about {
+    font-size: 3.2rem;
+    line-height: 120%;
+  }
+  .projects-page .projects .project__btn-wrapper {
+    width: 11.6rem;
+    height: 11.6rem;
+  }
+  .projects-page .projects .project__btn-wrapper > span {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem 0 0 0;
+    background-color: #FFF;
+  }
+  .projects-page .projects .project__btn-wrapper > span:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 11.6rem;
+    width: 11.6rem;
+    height: 11.6rem;
+    border-radius: 0 0 4rem 0;
+    box-shadow: 6rem 6rem 0 2rem #FFF;
+  }
+  .projects-page .projects .project__btn-wrapper > span:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 11.6rem;
+    width: 11.6rem;
+    height: 11.6rem;
+    border-radius: 0 0 4rem 0;
+    box-shadow: 6rem 6rem 0 2rem #FFF;
+  }
+  .projects-page .projects .project__btn {
+    width: 9.6rem;
+    height: 9.6rem;
+  }
+  .projects-page .projects .project__btn > svg {
+    width: 1.6rem;
+    height: 1.6rem;
+    stroke-width: 1.5;
+    stroke: #FFF;
+    transition: transform 0.3s ease;
+  }
+}
 .why-choose-us {
   width: 100%;
   max-width: 188rem;
@@ -4530,6 +5025,8 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  transition: color 0.2s ease-in-out;
   color: #131313;
   font-family: "Druk Cyr";
   font-size: 3rem;
@@ -4544,7 +5041,7 @@ section {
   justify-content: center;
   width: 7rem;
   height: 7rem;
-  background-color: #131313;
+  background-color: #FFF;
   border-radius: 50%;
 }
 
@@ -4552,6 +5049,9 @@ section {
   width: 10px;
   height: 10px;
   stroke-width: 2px;
+}
+
+.questions__header button svg path {
   stroke: #131313;
 }
 
@@ -4566,11 +5066,64 @@ section {
     stroke-width: 1.5px;
   }
 }
+.questions__header button svg {
+  transition: rotate 0.2s ease-in-out;
+}
+
 @media (max-width: 48em) {
   .questions__header {
     font-size: 4rem;
   }
 }
+.questions__header.active {
+  color: #11A9FF;
+  font-family: "Druk Cyr";
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media (max-width: 48em) {
+  .questions__header.active {
+    font-size: 4rem;
+  }
+}
+.questions__header.active button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  background-color: #65C82B;
+  border-radius: 50%;
+}
+
+.questions__header.active button svg {
+  width: 10px;
+  height: 10px;
+  stroke-width: 2px;
+}
+
+.questions__header.active button svg path {
+  stroke: #FFF;
+}
+
+.questions__header.active button:hover svg {
+  transform: translate(0.3rem, -0.4rem);
+}
+
+@media (max-width: 48em) {
+  .questions__header.active button {
+    width: 6px;
+    height: 6px;
+    stroke-width: 1.5px;
+  }
+}
+.questions__header.active button svg {
+  rotate: 90deg;
+}
+
 .questions__content-header {
   display: flex;
   gap: 3.6rem;
@@ -4712,11 +5265,18 @@ section {
     margin-bottom: 0;
   }
 }
+.accordion-content {
+  display: none;
+}
+
+.accordion-content.active {
+  display: block;
+}
 /*!***************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js!./node_modules/swiper/swiper-bundle.css ***!
   \***************************************************************************************************************************************************************************************************/
 /**
- * Swiper 10.3.1
+ * Swiper 10.2.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
  * https://swiperjs.com
  *
@@ -4724,7 +5284,7 @@ section {
  *
  * Released under the MIT License
  *
- * Released on: September 28, 2023
+ * Released on: August 17, 2023
  */
 /* FONT_START */
 @font-face {
@@ -5337,7 +5897,7 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
   border-radius: var(--swiper-scrollbar-border-radius, 10px);
   position: relative;
-  touch-action: none;
+  -ms-touch-action: none;
   background: var(--swiper-scrollbar-bg-color, rgba(0, 0, 0, 0.1));
 }
 
