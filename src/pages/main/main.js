@@ -31,23 +31,34 @@ $(document).on("keydown", function (event) {
     $(".overlay").removeClass("overlay_active");
   }
 });
-
-const swiperStages = new Swiper(".swiper-stages-of-construction", {
-  modules: [Navigation],
-  slidesPerView: 1.2,
-  direction: "horizontal",
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.stages-of-construction__btn-next',
-    prevEl: '.stages-of-construction__btn-prev',
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 1.5,
-      spaceBetween: 180,
+$(document).ready(function() {
+  const swiperStages = new Swiper(".swiper-stages-of-construction", {
+    modules: [Navigation],
+    slidesPerView: 1.2,
+    direction: "horizontal",
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '.stages-of-construction__btn-next',
+      prevEl: '.stages-of-construction__btn-prev',
     },
-  },
+    breakpoints: {
+      768: {
+        slidesPerView: 1.5,
+        spaceBetween: 180,
+      },
+    },
+  });
+
+  // Перемещение кнопки навигации на последний слайд
+  swiperStages.on('slideChange', function() {
+    if (swiperStages.isEnd) {
+      $('.swiper-button-next').appendTo('.новое-место');
+    } else {
+      $('.swiper-button-next').appendTo('.старое-место');
+    }
+  });
 });
+
 
 const swiperReviews = new Swiper(".reviews-swiper", {
   modules: [Pagination],
