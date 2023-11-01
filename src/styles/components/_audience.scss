@@ -45,9 +45,9 @@
                 background-image:
                     linear-gradient(rgba(255, 255, 255, 0.3) 0.1rem, transparent 1px),
                     linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0.1rem, transparent 1px);
-                background-size: 
-                8.5rem 8.5rem,
-                8.5rem 8.5rem;
+                background-size:
+                    8.5rem 8.5rem,
+                    8.5rem 8.5rem;
 
                 .audience__icon-wrapper {
                     >svg {
@@ -98,7 +98,8 @@
 
     // .audience__block-text
     &__block-text {
-        @include block-text(inherit, $avanti)
+        @include block-text(inherit, $avanti);
+        padding-left: 5.2rem;
     }
 
     @media (max-width: 48em) {
@@ -116,9 +117,8 @@
         // .audience__block
         &__block {
             padding: 3.2rem 3.2rem;
-            gap: 6.4rem;
+            gap: 4rem;
             border-radius: 4rem;
-
 
             &:first-of-type {
                 padding: 3.2rem;
@@ -126,7 +126,6 @@
                 background-position: right 0 top 0;
                 background-size: 18.2rem 24.6rem;
             }
-
         }
 
         // .audience__text
@@ -139,6 +138,16 @@
         // .audience__block-top 
         &__block-top {
             gap: 4rem;
+        }
+
+        // .audience__block-title
+        &__block-title {
+            width: 50rem;
+        }
+
+        // .audience__block-text
+        &__block-text {
+            padding-left: 0;
         }
 
     }
