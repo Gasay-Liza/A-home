@@ -1,277 +1,282 @@
 .why-choose-us {
+  width: 100%;
+  max-width: 188rem;
+  margin: 9rem auto 0;
+  background: $grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 4rem;
+
+  // .why-choose-us__inner
+  &__inner {
     width: 100%;
-    max-width: 188rem;
-    margin: 9rem auto 0;
-    background: $grey;
     display: flex;
     flex-direction: column;
-    align-items: center;
     box-sizing: border-box;
-    border-radius: 4rem;
+    padding: 5rem 7rem;
+  }
 
-    // .why-choose-us__inner 
-    &__inner {
+  // .why-choose-us__top
+  &__top {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .why-choose-us__call-btn
+  &__call-btn {
+    @extend .call-btn;
+
+    &:hover {
+      .why-choose-us__call-icon {
+        > svg {
+          transform: rotate(30deg);
+        }
+      }
+    }
+  }
+
+  // .why-choose-us__call-icon
+  &__call-icon {
+    @include call-icon($l-green);
+  }
+
+  // .why-choose-us__call-frame
+  &__call-frame {
+    @extend .call-frame;
+  }
+
+  // .why-choose-us__title
+  &__title {
+    @include title($black, $drukcyr);
+  }
+
+  // .why-choose-us__blocks
+  &__blocks {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 3rem;
+  }
+
+  // .why-choose-us__block
+  &__block {
+    position: relative;
+    width: 100%;
+    max-width: 41.3rem;
+    height: 54.2rem;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 4rem 4rem 5rem 5rem;
+    background-color: $l-grey;
+    border-radius: 4rem;
+    
+
+    .why-choose-us__icon {
+      display: flex;
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 13.6rem;
+      height: 13.6rem;
+      border-radius: 2.4rem;
+      padding: 3rem 1.8rem 2.5rem;
+      background: #fafafa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      > svg {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        padding: 5rem 7rem;
+        height: 100%;
+      }
+
+      
+    }
+    // костыль для первой иконки(убираю паддинг)
+    &:first-of-type {
+        .why-choose-us__icon {
+            padding: 0 0;
+        }
+      }
+    
+
+    .why-choose-us__icon-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 14.6rem;
+      height: 14.6rem;
+      border-radius: 2.4rem;
+      background-color: $grey;
+
+      > span {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 15rem;
+        height: 15rem;
+        border-radius: 0 0 4rem 0;
+        background-color: $grey;
+
+        &:before {
+          content: "";
+          position: absolute;
+          left: 100%;
+          top: 0;
+          width: 10rem;
+          height: 10rem;
+          border-radius: 3rem 0 0 0;
+          box-shadow: -1rem -1rem 0 1rem $grey;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 10rem;
+          height: 10rem;
+          border-radius: 3rem 0 0 0;
+          box-shadow: -1rem -1rem 0 1rem $grey;
+        }
+      }
+    }
+  }
+
+  // .why-choose-us__number
+  &__number {
+    margin-left: auto;
+    color: $black;
+    font-family: $avanti;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  // .why-choose-us__text-container
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 2rem;
+  }
+
+  // .why-choose-us__block-title
+  &__block-title {
+    @include title-h5($black, $avanti);
+  }
+
+  // .why-choose-us__block-text
+  &__block-text {
+    @include block-text($black, $avanti);
+  }
+
+  @media (max-width: 48em) {
+    max-width: 100%;
+    border-radius: 4rem;
+    margin: 12rem auto 0;
+    max-width: 71rem;
+
+    // .why-choose-us__inner
+    &__inner {
+      padding: 2rem 2rem;
     }
 
     // .why-choose-us__top
     &__top {
-        display: flex;
-        flex-direction: row;
-        box-sizing: border-box;
-        justify-content: space-between;
-        align-items: center
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 6rem;
     }
 
-    // .why-choose-us__call-btn 
-    &__call-btn {
-        @extend .call-btn;
-
-        &:hover {
-            .why-choose-us__call-icon {
-                >svg {
-                    transform: rotate(30deg);
-                }
-            }
-        }
-    }
-
-    // .why-choose-us__call-icon 
-    &__call-icon {
-        @include call-icon($l-green);
-    }
-
-    // .why-choose-us__call-frame 
-    &__call-frame {
-        @extend .call-frame;
-    }
-
-    // .why-choose-us__title
-    &__title {
-        @include title($black, $drukcyr)
-    }
-
-    // .why-choose-us__blocks 
+    // .why-choose-us__blocks
     &__blocks {
-        width: 100%;
-        max-width: 100%;
-        margin-top: 5rem;
-        display: flex;
-        flex-direction: row;
-        box-sizing: border-box;
-        gap: 3rem;
+      margin-top: 6rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
     }
 
-    // .why-choose-us__block 
+    // .why-choose-us__block
     &__block {
-        position: relative;
-        width: 100%;
-        max-width: 41.3rem;
-        height: 54.2rem;
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        justify-content: space-between;
-        padding: 4rem 4rem 5rem 5rem;
-        background-color: $l-grey;
+      max-width: 66.8rem;
+      height: 57.2rem;
+      padding: 6.4rem 6.4rem 3.2rem 3.2rem;
+      border-radius: 6rem 6rem 6rem 3rem;
+
+      .why-choose-us__icon {
+        width: 22.4rem;
+        height: 17.8rem;
         border-radius: 4rem;
+        padding: 3rem 4rem;
+      }
 
-        .why-choose-us__icon {
-            display: flex;
-            box-sizing: border-box;
+      .why-choose-us__icon-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 24.4rem;
+        height: 19.8rem;
+        border-radius: 6rem;
+        background-color: inherit;
+
+        > span {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 24rem;
+          height: 19.8rem;
+          border-radius: 0 0 6rem 0;
+          background-color: $grey;
+
+          &:before {
+            content: "";
             position: absolute;
+            left: 100%;
             top: 0;
-            left: 0;
-            width: 13.6rem;
-            height: 13.6rem;
-            border-radius: 2.4rem;
-            padding: 3rem 1.8rem 2.5rem;
-            background: #FAFAFA;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 6rem 0 0 0;
+            box-shadow: -1rem -1rem 0 1rem $grey;
+          }
 
-            >svg {
-                width: 100%;
-                height: 100%;
-            }
-        }
-
-        .why-choose-us__icon-background {
+          &:after {
+            content: "";
             position: absolute;
-            top: 0;
+            top: 100%;
             left: 0;
-            display: block;
-            width: 14.6rem;
-            height: 14.6rem;
-            border-radius: 2.4rem;
-            background-color: $grey;
-
-            >span {
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 15rem;
-                height: 15rem;
-                border-radius: 0 0 4rem 0;
-                background-color: $grey;
-
-                &:before {
-                    content: '';
-                    position: absolute;
-                    left: 100%;
-                    top: 0;
-                    width: 10rem;
-                    height: 10rem;
-                    border-radius: 3rem 0 0 0;
-                    box-shadow: -1rem -1rem 0 1rem $grey;
-                }
-
-                &:after {
-                    content: '';
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    width: 10rem;
-                    height: 10rem;
-                    border-radius: 3rem 0 0 0;
-                    box-shadow: -1rem -1rem 0 1rem $grey;
-                }
-            }
+            width: 10rem;
+            height: 10rem;
+            border-radius: 6rem 0 0 0;
+            box-shadow: -1rem -1rem 0 1rem $grey;
+          }
         }
+      }
     }
 
-    // .why-choose-us__number 
+    // .why-choose-us__number
     &__number {
-        margin-left: auto;
-        color: $black;
-        font-family: $avanti;
-        font-size: 1.6rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase;
+      font-size: 3.2rem;
     }
 
-    // .why-choose-us__text-container 
+    // .why-choose-us__text-container
     &__text-container {
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        gap: 2rem;
+      gap: 4rem;
     }
-
-    // .why-choose-us__block-title
-    &__block-title {
-        @include title-h5($black, $avanti);
-    }
-
-    // .why-choose-us__block-text
-    &__block-text {
-        @include block-text($black, $avanti)
-    }
-
-    @media (max-width: 48em) {
-        max-width: 100%;
-        border-radius: 4rem;
-        margin: 12rem auto 0;
-        max-width: 71rem;
-        
-        // .why-choose-us__inner 
-        &__inner {
-            padding: 2rem 2rem;
-        }
-
-        // .why-choose-us__top
-        &__top {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 6rem;
-        }
-
-        // .why-choose-us__blocks 
-        &__blocks {
-            margin-top: 6rem;
-            display: flex;
-            flex-direction: column;
-            gap: 4rem;
-        }
-
-        // .why-choose-us__block 
-        &__block {
-            max-width: 66.8rem;
-            height: 57.2rem;
-            padding: 6.4rem 6.4rem 3.2rem 3.2rem;
-            border-radius: 6rem 6rem 6rem 3rem;
-
-            .why-choose-us__icon {
-                width: 22.4rem;
-                height: 17.8rem;
-                border-radius: 4rem;
-                padding: 3rem 4rem;
-
-            }
-
-            .why-choose-us__icon-background {
-                position: absolute;
-                top: 0;
-                left: 0;
-                display: block;
-                width: 24.4rem;
-                height: 19.8rem;
-                border-radius: 6rem;
-                background-color: inherit;
-
-                >span {
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 24rem;
-                    height: 19.8rem;
-                    border-radius: 0 0 6rem 0;
-                    background-color: $grey;
-
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        left: 100%;
-                        top: 0;
-                        width: 10rem;
-                        height: 10rem;
-                        border-radius: 6rem 0 0 0;
-                        box-shadow: -1rem -1rem 0 1rem $grey;
-                    }
-
-                    &:after {
-                        content: '';
-                        position: absolute;
-                        top: 100%;
-                        left: 0;
-                        width: 10rem;
-                        height: 10rem;
-                        border-radius: 6rem 0 0 0;
-                        box-shadow: -1rem -1rem 0 1rem $grey;
-                    }
-                }
-            }
-        }
-
-
-
-
-        // .why-choose-us__number 
-        &__number {
-            font-size: 3.2rem;
-        }
-
-        // .why-choose-us__text-container 
-        &__text-container {
-            gap: 4rem;
-        }
-    }
-
+  }
 }
