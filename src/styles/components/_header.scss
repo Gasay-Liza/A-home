@@ -259,11 +259,12 @@
         line-height: normal;
         letter-spacing: 0.072rem;
         padding-top: 10px;
+        box-sizing: border-box;
       }
 
       // .burger-menu__number
       &__number {
-        text-wrap: nowrap;
+        white-space: nowrap;
         margin-top: auto;
         position: fixed;
         bottom: 8rem;
@@ -272,6 +273,7 @@
         height: 8.4rem;
         width: 29rem;
         padding: 3.2rem 4.8rem;
+        box-sizing: border-box;
         align-items: center;
         gap: 2rem;
         flex-shrink: 0;
