@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
-    transition: hover 0.2s ease;
+    transition: stroke 0.2s ease;
     svg{
       path{
         stroke: $black;
@@ -52,7 +52,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
-    transition: hover 0.2s ease;
+    transition: stroke 0.2s ease;
     svg{
       path{
         stroke: $black;
