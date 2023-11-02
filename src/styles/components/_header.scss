@@ -192,7 +192,7 @@
       top: 0;
       left: 0;
       width: 100rem;
-      height: 100vh;
+      height: 100%;
       background-color: rgba(19, 19, 19, 0.64);
 
       &_active {
@@ -214,7 +214,7 @@
       flex-direction: column;
       width: 59.2rem;
       max-width: 59.2rem;
-      height: 100vh;
+      height: 100%;
       left: 0;
       transition: all 0.3s ease-in-out;
       transform: translateX(-100%);
@@ -265,6 +265,9 @@
       &__number {
         text-wrap: nowrap;
         margin-top: auto;
+        position: fixed;
+        bottom: 8rem;
+        left: 4rem;
         display: flex;
         height: 8.4rem;
         width: 29rem;
