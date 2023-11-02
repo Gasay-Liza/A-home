@@ -35,6 +35,7 @@ $(document).ready(function() {
   const swiperStages = new Swiper(".swiper-stages-of-construction", {
     modules: [Navigation],
     slidesPerView: 1.2,
+    loop: "true",
     direction: "horizontal",
     spaceBetween: 10,
     navigation: {
@@ -47,15 +48,6 @@ $(document).ready(function() {
         spaceBetween: 180,
       },
     },
-  });
-
-  // Перемещение кнопки навигации на последний слайд
-  swiperStages.on('slideChange', function() {
-    if (swiperStages.isEnd) {
-      $('.swiper-button-next').appendTo('.новое-место');
-    } else {
-      $('.swiper-button-next').appendTo('.старое-место');
-    }
   });
 });
 
