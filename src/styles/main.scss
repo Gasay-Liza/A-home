@@ -22,10 +22,6 @@
 @import "components/services";
 @import "components/questions";
 
-.body {
-    margin: 2rem 2rem;
-    overflow: hidden;
-}
 
 .main-content {
     margin-top: 2rem;
@@ -85,8 +81,7 @@
 
 
 section {
-    margin-top: 9rem;
-    margin-bottom: 0;
+    margin: 9rem auto 0;
 
     @media (max-width: 48em) {
         margin-top: 12rem;
