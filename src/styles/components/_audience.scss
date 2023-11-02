@@ -126,6 +126,47 @@
                 background-position: right 0 top 0;
                 background-size: 18.2rem 24.6rem;
             }
+
+            &:not(:first-of-type) {
+                &:hover {
+                    background-color: $grey;
+                    color: $black;
+                    background-image:
+                        none;
+                    background-size:
+                        none;
+
+                    .audience__icon-wrapper {
+                        >svg {
+                            fill: $l-green;
+                        }
+                    }
+                }
+            }
+
+            .audience__icon-wrapper {
+                svg {
+                    width: 6.4rem;
+                    height: 6.4rem;
+                }
+            }
+
+            &:nth-of-type(3) {
+                background-color: $l-green;
+                color: $white;
+                background-image:
+                    linear-gradient(rgba(255, 255, 255, 0.3) 0.1rem, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0.1rem, transparent 1px);
+                background-size:
+                    8.5rem 8.5rem,
+                    8.5rem 8.5rem;
+
+                .audience__icon-wrapper {
+                    >svg {
+                        fill: $white;
+                    }
+                }
+            }
         }
 
         // .audience__text
