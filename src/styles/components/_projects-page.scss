@@ -67,7 +67,6 @@
           flex-direction: column;
           justify-content: space-between;
           box-sizing: border-box;
-          padding: 5rem;
           &:hover {
             .project__shadow {
               background-color: $l-green;
@@ -352,7 +351,6 @@
             border-radius: 4rem 4rem 0 4rem;
             max-width: 100%;
             height: 59.2rem;
-            padding: 3.2rem;
       
             // .project_top
             &_top {

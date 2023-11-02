@@ -354,8 +354,11 @@
       border-radius: 4rem 4rem 0 4rem;
       max-width: 100%;
       height: 59.2rem;
-      padding: 3.2rem;
 
+      a{
+        padding: 3.2rem;
+      }
+      
       // .project_top
       &_top {
         gap: 2rem;
