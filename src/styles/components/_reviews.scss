@@ -10,7 +10,7 @@
   .reviews-swiper-pagination {
     display: none;
   }
-  
+
   // .reviews__inner
   &__inner {
     display: flex;
@@ -44,6 +44,62 @@
     @include btn-text($white, $avanti);
   }
 
+
+  .reviews-swiper-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .reviews-swiper-navigation__btn-prev {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    >svg{
+      path{
+        transition: stroke 0.2s ease-in-out;
+        stroke: $black;
+      }
+    }
+    &:hover{
+      >svg{
+        path{
+          stroke: $l-blue;
+        }
+      }
+    }
+    border-radius: 50%;
+    border: 1px solid $black;
+  }
+
+  .reviews-swiper-navigation__btn-next {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 7rem;
+    height: 7rem;
+    >svg{
+      path{
+        transition: stroke 0.2s ease-in-out;
+        stroke: $black;
+      }
+    }
+    &:hover{
+      >svg{
+        path{
+          stroke: $l-blue;
+        }
+      }
+    }
+    border-radius: 50%;
+    border: 1px solid $black;
+  }
+
+
   .reviews-slide {
     width: 100%;
     position: relative;
@@ -65,13 +121,13 @@
       box-sizing: border-box;
       background-color: $grey;
 
-      > svg {
+      >svg {
         width: 7.6rem;
         height: 7rem;
       }
     }
 
-    > span {
+    >span {
       position: absolute;
       top: 0;
       right: 0;
@@ -212,7 +268,9 @@
       justify-content: center;
       width: 100%;
       height: 2.4rem;
-
+      .reviews-swiper-navigation {
+        display: none;
+      }
       .swiper-pagination-bullet {
         opacity: 1;
         margin: 0 0;
@@ -250,13 +308,13 @@
         height: 56.8rem;
         background-color: $grey;
 
-        > svg {
+        >svg {
           width: 9.6rem;
           height: 8.8rem;
         }
       }
 
-      > span {
+      >span {
         display: none;
       }
 

@@ -69,12 +69,6 @@
         &.active {
             border-radius: 2rem 2rem 0rem 0rem;
             background: $grey;
-            &::before{
-                content: "";
-                width: 1rem;
-                height: 2rem;
-
-            }
         }
     }
 }
