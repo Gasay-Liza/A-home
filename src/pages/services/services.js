@@ -50,8 +50,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 const swiperServicesMobile = new Swiper(".services-swiper", {
-  slidesPerView: 1,
+  slidesPerView: 1.3,
   direction: "horizontal",
-  spaceBetween: 30,
+  spaceBetween: 10,
 });
 })  
