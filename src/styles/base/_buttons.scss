@@ -155,7 +155,8 @@
         width: 10px;
         height: 10px;
         stroke-width: 2px;
-        path{
+
+        path {
             stroke: $stroke-color;
         }
     }
@@ -167,8 +168,12 @@
     }
 
     @media (max-width: 48em) {
-        width: 6px;
-        height: 6px;
+        width: 9.6rem;
+        height: 9.6rem;
         stroke-width: 1.5px;
+
+        svg {
+            stroke-width: 1.5px;
+        }
     }
 }

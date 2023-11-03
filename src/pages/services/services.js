@@ -2,6 +2,8 @@ import "../../utils/fonts/fonts.css";
 import "../../styles/main.scss";
 import "./services.html";
 import $ from "jquery";
+import Swiper from "swiper";
+import "swiper/swiper-bundle.css";
 
 $(document).ready(function () { // При загрузке страницы активному элементу добавляем уголки в свитчере
   $(".switcher__btn.active").prev().addClass("right-corner"); 
@@ -39,18 +41,17 @@ $(document).ready(function () {
   
 });
 
-$(".services__switcher-btn:eq(1)").click(function () {
-  // Предыдущий элемент
-  var prevElement = $(this).prev();
-  // Следующий элемент
-  var nextElement = $(this).next();
-
-  // Добавьте свой код для работы с элементами prevElement и nextElement здесь
-});
-
 $(document).ready(function () {
   $('.accordion-header').click(function () {
     $(this).toggleClass('active');
     $(this).next('.accordion-content').slideToggle();
   });
 });
+
+$(document).ready(function () {
+const swiperServicesMobile = new Swiper(".services-swiper", {
+  slidesPerView: 1,
+  direction: "horizontal",
+  spaceBetween: 30,
+});
+})  

@@ -49,27 +49,31 @@ $(document).ready(function() {
       },
     },
   });
-});
 
-
-const swiperReviews = new Swiper(".reviews-swiper", {
-  modules: [Pagination,Navigation],
-  slidesPerView: 1,
-  direction: "horizontal",
-  spaceBetween: 30,
-  loop: "true",
-  navigation: {
-    nextEl: '.reviews-swiper-navigation__btn-next',
-    prevEl: '.reviews-swiper-navigation__btn-prev',
-  },
-  pagination: {
-    el: ".reviews-swiper-pagination",
-    type: "bullets",
-    clickable: true,
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
+  const swiperReviews = new Swiper(".reviews-swiper", {
+    modules: [Pagination,Navigation],
+    slidesPerView: 1,
+    direction: "horizontal",
+    spaceBetween: 30,
+    loop: "true",
+    navigation: {
+      nextEl: '.reviews-swiper-navigation__btn-next',
+      prevEl: '.reviews-swiper-navigation__btn-prev',
     },
-  },
+    pagination: {
+      el: ".reviews-swiper-pagination",
+      type: "bullets",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+    },
+  });
+
+  
 });
+
+
+

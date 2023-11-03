@@ -261,16 +261,16 @@
     position: relative;
     max-width: 67rem;
     margin: 12rem auto 0;
-
+    .reviews-swiper-navigation {
+      display: none;
+    }
     .reviews-swiper-pagination {
       display: flex;
       align-items: center;
       justify-content: center;
       width: 100%;
       height: 2.4rem;
-      .reviews-swiper-navigation {
-        display: none;
-      }
+      
       .swiper-pagination-bullet {
         opacity: 1;
         margin: 0 0;

@@ -1,4 +1,7 @@
 .services {
+    &.services_mobile {
+        display: none;
+    }
     width: 174rem;
     display: flex;
     flex-direction: column;
@@ -27,16 +30,20 @@
         padding: 2rem 4rem;
         justify-content: center;
         align-items: center;
-        &.left-corner{
+
+        &.left-corner {
             background-color: $grey;
-            .services__switcher-back{
+
+            .services__switcher-back {
                 background-color: $white;
                 border-radius: 0 0 0 2rem;
             }
         }
-        &.right-corner{
+
+        &.right-corner {
             background-color: $grey;
-            .services__switcher-back{
+
+            .services__switcher-back {
                 background-color: $white;
                 border-radius: 0 0 2rem 0;
             }
@@ -56,7 +63,7 @@
         text-transform: uppercase;
     }
 
-    
+
 
     // .services__title-h2
     &__title-h2 {
@@ -186,5 +193,112 @@
     // .services__advantages-number 
     &__advantages-number {
         @include title-h2($l-blue, $drukcyr);
+    }
+}
+
+
+@media (max-width: 48em) {
+    .services{
+        display: none;
+    }
+    .services.services_mobile {
+        display: block;
+        padding-left: 2rem;
+        width: auto;
+
+        .services__title-h2{
+            margin-left: 2rem;
+        }
+
+        .services-swiper {
+            margin-top: 6rem;
+            box-sizing: border-box;
+        }
+
+        .services__block {
+            background: none;
+            padding: 0;
+            max-width: 61.6rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .services__block-top{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .services__billet{
+            width: 100%;
+            display: block;
+            background-color: $grey;
+            position: relative;
+            &::after{
+                border-radius: 0 0 0 4rem;
+                background-color: $white;
+                content: "";
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+
+            }
+        }
+
+        .services__block-title {
+            background: $grey;
+            white-space: nowrap;
+            border-radius: 4rem 4rem 0 0;
+            padding: 3.2rem 4rem;
+            color: $black;
+            font-family: $avanti;
+            font-size: 2.8rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; 
+            text-transform: uppercase;
+        }
+
+        .services__description {
+            background: $grey;
+            border-radius: 0 4rem 4rem 4rem;
+            padding: 0 2rem 2rem;
+            padding-top: 4.2rem;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .services__footer {
+            margin-top: 6.4rem;
+            width: 100%;
+        }
+
+        // .services__icons 
+        // .services__icon 
+        // .services__link 
+        // .services__link-text 
+        .services__advantages-list {
+            margin-top: 6.4rem;
+            flex-direction: column;
+            width: 100%;
+            border-left: none;
+            flex-wrap: nowrap;
+            gap: 4rem;
+            padding-left: 0;
+        }
+
+        .services__advantages-item {
+            gap: 1.6rem;
+            width: 100%;
+        }
+
+        // .services__advantages-title-h5 
+        // .services__advantages-text 
+        // .services__text-container 
+        // .services__advantages-number 
+
+
     }
 }
