@@ -1,13 +1,22 @@
 .detail-services {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   max-width: 174rem;
-  min-height: 60rem;
-  border-radius: 4rem;
-  background: $grey;
-
+  // .detail-services__title-h2
+  &__title-h2 {
+    margin-top: 5rem;
+    @include title-h2($black, $drukcyr);
+  }
+  // .detail-services__inner
+  &__inner {
+    margin-top: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 100%;
+    min-height: 60rem;
+    border-radius: 4rem;
+    background: $grey;
+  }
   // .detail-services__container
   &__container {
     width: 100%;
@@ -16,6 +25,7 @@
     padding: 5rem;
     width: 60.4rem;
   }
+
   // .detail-services__tag
   &__tag {
     width: fit-content;
@@ -95,6 +105,75 @@
       width: 100%;
       height: 100%;
       border-radius: inherit;
+    }
+  }
+}
+@media (max-width: 48em) {
+  .detail-services {
+    margin-top: 4rem;
+    max-width: 67rem;
+    // .detail-services__inner
+    &__inner {
+      margin-top: 5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      min-height: auto;
+    }
+    // .detail-services__container
+    &__container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 3.2rem 3.2rem 0;
+    }
+
+    // .detail-services__tag
+    &__tag {
+      width: fit-content;
+      display: flex;
+      padding: 2rem 5.2rem 2rem 4rem;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20rem;
+      font-size: 2.8rem;
+      sup {
+        font-size: 1.6rem;
+      }
+    }
+
+    // .detal-services__link
+    &__link {
+      margin-top: 4rem;
+    }
+
+    // .detail-services__text
+    &__text {
+      margin-top: 4rem;
+      color: $black;
+      font-family: $avanti;
+      font-size: 3.6rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.072rem;
+      strong {
+        color: $l-blue;
+        font-family: $avanti;
+        font-size: 6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+
+    // .detail-services__img-container
+    &__img-container {
+      margin-top: 7rem;
+      width: 100%;
+      height: 48rem;
+      object-fit: cover;
     }
   }
 }
