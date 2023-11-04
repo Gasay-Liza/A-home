@@ -150,12 +150,11 @@
     height: 7rem;
     background-color: $background-color;
     border-radius: 50%;
-
+    transition: transform 0.3s ease;
     svg {
         width: 10px;
         height: 10px;
         stroke-width: 2px;
-
         path {
             stroke: $stroke-color;
         }

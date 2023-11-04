@@ -1,0 +1,100 @@
+.detail-services {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 174rem;
+  min-height: 60rem;
+  border-radius: 4rem;
+  background: $grey;
+
+  // .detail-services__container
+  &__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    width: 60.4rem;
+  }
+  // .detail-services__tag
+  &__tag {
+    width: fit-content;
+    display: flex;
+    padding: 1rem 2.6rem 1rem 2rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10rem;
+    border: 1px solid $l-green;
+    color: $l-green;
+    font-family: $avanti;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    sup {
+      color: $l-green;
+      font-family: $avanti;
+      font-size: 1.3rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 120%;
+      text-transform: uppercase;
+    }
+  }
+  // .detail-services__title-h4
+  &__title-h4 {
+    margin-top: 2rem;
+    @include title-h4($black, $drukcyr);
+  }
+  // .detail-services__paragraph
+  &__paragraph {
+    margin-top: 4rem;
+    @include block-text($black, $avanti);
+  }
+  // .detal-services__link
+  &__link {
+    margin-top: 5rem;
+    width: fit-content;
+    @include btn($white, $l-blue);
+  }
+
+  // .detal-services__link-text
+  &__link-text {
+    @include btn-text($l-blue, $avanti);
+  }
+
+  // .detail-services__text
+  &__text {
+    margin-top: auto;
+    color: $black;
+    font-family: $avanti;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.04rem;
+    strong {
+      color: $l-blue;
+      font-family: $avanti;
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+  // .detail-services__img-container
+  &__img-container {
+    border-radius: 4rem;
+    width: 77.8rem;
+    object-fit: cover;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+    }
+  }
+}
