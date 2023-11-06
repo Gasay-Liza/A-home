@@ -42,3 +42,43 @@
     @include block-text($black, $avanti);
   }
 }
+@media (max-width: 48em) {
+  .benefits-list {
+    // .benefits-list__items
+    &__items {
+      max-width: 67rem;
+      gap: 3.2rem;
+    }
+
+    // .benefits-list__item
+    &__item {
+      width: 100%;
+      border-radius: 4rem;
+      padding: 3.2rem;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: start;
+      gap: 4rem;
+    }
+
+    // .benefits-list__title-h3
+    &__title-h3 {
+      max-width: 75%;
+      @include title-h3($black, $drukcyr);
+    }
+
+    // .benefits-list__item-icon
+    &__item-icon{
+        height: 16.4rem;
+      svg {
+        width: 16.4rem;
+        height: 100%;
+        transform: rotate(90deg);
+      }
+    }
+    // .benefits-list__item-paragraph
+    &__item-paragraph {
+      width: 100%;
+    }
+  }
+}
