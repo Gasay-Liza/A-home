@@ -54,10 +54,12 @@
     }
 
     .header__inner_mobile {
-      padding: 0 4rem;
+      padding: 0 0;
     }
     @media (max-width: 48em) {
       left: 2rem;
+      top: 0;
+
     }
   }
 

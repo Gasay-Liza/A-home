@@ -1,49 +1,48 @@
 .first-screen {
-  margin: 0 0;
+  margin: 2rem auto 0;
   padding: 0 0;
   width: 100%;
   max-width: 188rem;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  
-  >.container {
+
+  > .container {
     opacity: 0;
     display: none;
     box-sizing: border-box;
   }
 
-  &__wrapper{
-  position: relative;
-  margin: 0 0;
-  width: 100%;
-  border-radius: 4rem;
-  max-width: 100%;
-  height: 99.6rem;
-
-  >img {
-    z-index: -100;
-    position: absolute;
-    border-radius: 4rem;
-    object-fit: cover;
+  &__wrapper {
+    position: relative;
+    margin: 0 0;
     width: 100%;
-    height: 100%;
+    border-radius: 4rem;
+    max-width: 100%;
+    height: 99.6rem;
+
+    > img {
+      z-index: -100;
+      position: absolute;
+      border-radius: 4rem;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
   }
 
-  }
-  
   &__background {
     z-index: -10;
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: inherit;
-    background: linear-gradient(0deg,
-        rgba(18, 26, 43, 0.24) 0%,
-        rgba(18, 26, 43, 0.24) 100%);
+    background: linear-gradient(
+      0deg,
+      rgba(18, 26, 43, 0.24) 0%,
+      rgba(18, 26, 43, 0.24) 100%
+    );
   }
-
-  
 
   &__content {
     width: 100%;
@@ -53,6 +52,34 @@
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+  }
+
+  // .first-screen__left-section
+  &__left-section {
+    gap: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    width: 58rem;
+    margin-top: auto;
+    // .first-screen__label
+    .first-screen__label {
+      bottom: auto;
+      right: 1.1rem;
+
+      top: -1rem;
+    }
+    .first-screen__text {
+      width: 39.5rem;
+      margin-left: 0;
+    }
+
+    .first-screen__call-btn {
+      margin-left: 0;
+    }
+  }
+
+  &__title-h2 {
+    @include title-h2($white, $drukcyr);
   }
 
   &__middle-section {
@@ -116,7 +143,7 @@
     background-color: $white;
     border-radius: 50%;
 
-    >svg {
+    > svg {
       width: 1.2rem;
       height: 2rem;
       transition: transform 0.3s ease;
@@ -129,7 +156,7 @@
     }
 
     &:hover {
-      >svg {
+      > svg {
         transform: translate(0.3rem, -0.4rem);
       }
     }
@@ -151,7 +178,7 @@
     @extend .call-btn;
     &:hover {
       .first-screen__call-icon {
-        >svg {
+        > svg {
           transform: rotate(30deg);
         }
       }
@@ -159,22 +186,22 @@
   }
 
   &__call-icon {
-    @include call-icon($l-green)
+    @include call-icon($l-green);
   }
 
   &__call-frame {
-    @extend .call-frame
+    @extend .call-frame;
   }
 
   &__bottom-section {
-    margin-top: 12.8rem;
+    margin-top: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     box-sizing: border-box;
 
-    >.container {
+    > .container {
       display: flex;
       box-sizing: border-box;
       width: 100%;
@@ -204,7 +231,8 @@
 
   &__label {
     position: absolute;
-    width: 18.9rem;
+    white-space: nowrap;
+    width: auto;
     bottom: 18.6rem;
     right: 10.1rem;
     //текст
@@ -235,12 +263,16 @@
     width: 41.3rem;
     height: 34.5rem;
     flex-shrink: 0;
-    padding:  0 0;
+    padding: 0 0;
     background-image: url(../utils/img/background-container.svg);
     background-position: right 0 top 0;
     border-radius: 4rem;
     background-repeat: no-repeat;
     background-size: cover;
+    &__paragraph {
+      max-width: 34rem;
+      @include block-text($white, $avanti);
+    }
 
     &__top {
       width: 100%;
@@ -280,7 +312,15 @@
       border-radius: 50%;
       border: 0.3rem solid $white;
     }
-
+    &__text-title {
+      color: #fff;
+      font-family: $avanti;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.04rem;
+    }
     &__text {
       width: 100%;
       display: flex;
@@ -340,7 +380,7 @@
       background-color: $white;
       border-radius: 50%;
 
-      >svg {
+      > svg {
         width: 1rem;
         height: 1rem;
         stroke: $l-blue;
@@ -349,7 +389,7 @@
       }
 
       &:hover {
-        >svg {
+        > svg {
           transform: translate(0.3rem, -0.4rem);
         }
       }
@@ -395,7 +435,7 @@
       border-radius: 10rem;
       background: $white;
 
-      >svg {
+      > svg {
         width: 1.1rem;
         height: 1.6rem;
         stroke: $l-blue;
@@ -404,7 +444,7 @@
       }
 
       &:hover {
-        >svg {
+        > svg {
           transform: translate(0.3rem, -0.4rem);
         }
       }
@@ -426,12 +466,12 @@
   @media (max-width: 48em) {
     max-width: 71rem;
     gap: 1.6rem;
-    
-    &__wrapper{
+
+    &__wrapper {
       height: 90rem;
     }
 
-    >.container {
+    > .container {
       opacity: 1;
       display: flex;
       box-sizing: border-box;
@@ -442,7 +482,7 @@
       padding: 2rem;
 
       .first-screen__bottom-section {
-        >.container {
+        > .container {
           opacity: 0;
           display: none;
         }
@@ -457,6 +497,26 @@
       gap: 6.4rem;
       flex-direction: column;
       align-items: flex-start;
+    }
+    // .first-screen__left-section
+    &__left-section {
+      gap: 0;
+      width: 100%;
+      // .first-screen__label
+      .first-screen__label {
+        bottom: auto;
+        right: 1.1rem;
+        top: -2rem;
+      }
+      .first-screen__text {
+        width: 100%;
+        margin-left: 0;
+      }
+
+      .first-screen__call-btn {
+        margin-top: 6.4rem;
+        margin-left: 0;
+      }
     }
 
     &__btn-container {
@@ -488,7 +548,7 @@
 
     &__label {
       position: absolute;
-      width: 22.2rem;
+      width: auto;
       height: 5.4rem;
       bottom: 13rem;
       right: 0;
@@ -513,14 +573,15 @@
         gap: 0;
         justify-content: space-between;
       }
-
+      &__paragraph {
+        max-width: 100%;
+      }
       &__top-block {
         width: 100%;
         max-width: 30rem;
         padding: 2rem;
-        gap: 4rem;
+        gap: 3rem;
       }
-
 
       &__icon-wrapper {
         width: 7.2rem;
@@ -552,6 +613,16 @@
         }
       }
 
+      &__text-title {
+        color: #fff;
+        font-family: $avanti;
+        font-size: 3.6rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.08rem;
+      }
+
       &__image-wrapper {
         width: 33.2rem;
         height: 15.8rem;
@@ -567,7 +638,7 @@
         width: 9.6rem;
         height: 9.6rem;
 
-        >svg {
+        > svg {
           width: 1.6rem;
           height: 1.6rem;
           stroke-width: 0.3rem;
@@ -575,7 +646,7 @@
       }
 
       &__bottom {
-        padding: 2rem;
+        padding: 0 2rem 2rem;
         gap: 2rem;
       }
 
@@ -583,7 +654,6 @@
         width: 100%;
         font-size: 3.2rem;
         line-height: 130%;
-
       }
 
       &__btn {
@@ -594,7 +664,7 @@
         flex-shrink: 0;
         border-radius: 20rem;
 
-        >svg {
+        > svg {
           width: 2.2rem;
           height: 3.2rem;
           stroke-width: 1.5;
