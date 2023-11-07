@@ -225,7 +225,7 @@
             button{
                 @include accordion-button($white,$black);
                 svg{
-                    transition: rotate 1s ease-in-out;
+                    transition: rotate 0.2s ease-in-out;
                 }
             }
             @include title-h5($black, $avanti);
