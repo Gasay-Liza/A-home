@@ -1,7 +1,6 @@
 .banner {
-    margin: 2rem 0 0;
+  margin: 2rem 0 0;
   width: 100%;
-
 
   // .banner__container
   &__container {
@@ -22,10 +21,10 @@
     object-fit: cover;
     border-radius: 4rem;
     filter: brightness(0.7);
-    img{
-        border-radius: 4rem;
-        width: 100%;
-        height: 100%;
+    img {
+      border-radius: 4rem;
+      width: 100%;
+      height: 100%;
     }
   }
 
@@ -35,20 +34,41 @@
     padding: 5rem 7rem;
     box-sizing: border-box;
   }
-  
+
   // .banner__bottom-section
-  &__bottom-section{
+  &__bottom-section {
     margin-top: auto;
     display: flex;
     flex-direction: column;
   }
+
   // .banner__title-h2
-  &__title-h2{
-    @include title-h2($white, $drukcyr)
+  &__title-h2 {
+    @include title-h2($white, $drukcyr);
   }
+
   // .banner__date
-  &__date{
+  &__date {
     margin-top: 2rem;
-    @include block-text($white, $avanti)
+    @include block-text($white, $avanti);
+  }
+}
+
+@media (max-width: 48em) {
+  .banner {
+    margin: 2rem 0 0;
+    width: 100%;
+
+    // .banner__container
+    &__container {
+      width: 100%;
+      max-width: 71rem;
+      height: 90rem;
+    }
+
+    // .banner__content
+    &__content {
+      padding: 2rem 2rem;
+    }
   }
 }
