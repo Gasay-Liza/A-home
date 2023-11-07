@@ -102,21 +102,29 @@ $(document).ready(function(){
       $('.modal-overlay').fadeOut();
     }
   });
+
+  $(document).ready(function() {
+    $('.modal__form').submit(function(event) {
+      event.preventDefault(); 
+       $('.modal_review').hide(); // Закрыть модальное окно
+       $('.modal_success').show(); // Открыть другое модальное окно
+    });
+ });
+
 });
 
 $(document).ready(function(){
-const textarea = document.getElementById('myTextArea');
   const maxRows = 11; // Максимальное количество строк
 
-  textarea.addEventListener('input', (event) => {
-    const target = event.target;
-    target.style.height = 'auto'; // Сброс предыдущей высоты
-    target.style.height = `${target.scrollHeight}px`; // Устанавливаем новую высоту
+  $('#myTextArea').on('input', function() {
+    const target = this;
+    $(target).css('height', 'auto'); // Сброс предыдущей высоты
+    $(target).css('height', `${target.scrollHeight}px`); // Устанавливаем новую высоту
 
     if (target.value.split('\n').length >= maxRows) {
-      textarea.style.overflowY = 'scroll'; // Добавляем скролл, если достигнуто максимальное количество строк
+      $(target).css('overflowY', 'scroll'); // Добавляем скролл, если достигнуто максимальное количество строк
     } else {
-      textarea.style.overflowY = 'auto'; // Удаляем скролл, если строк меньше максимального значения
+      $(target).css('overflowY', 'auto'); // Удаляем скролл, если строк меньше максимального значения
     }
   });
 });

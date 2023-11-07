@@ -15,6 +15,11 @@
   // .modal_review
   &_review {
   }
+  // .modal_review
+  &_success {
+    display: none;
+    z-index: 12;
+  }
 
   // .modal__background
   &__background {
