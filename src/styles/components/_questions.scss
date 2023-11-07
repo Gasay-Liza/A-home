@@ -71,6 +71,9 @@
 
     // .questions__header
     &__header {
+        p{
+            max-width: 67.7rem;
+        }
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -216,8 +219,9 @@
         // .questions__header
         &__header {
             justify-content: space-between;
-            gap: 3.2rem;
-            
+            p{
+                max-width: 48rem;
+            }
             button{
                 @include accordion-button($white,$black);
                 svg{
