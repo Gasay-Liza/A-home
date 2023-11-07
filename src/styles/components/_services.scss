@@ -1,4 +1,5 @@
 .services {
+    margin-top: 5rem;
     &.services_mobile {
         display: none;
     }
@@ -202,6 +203,7 @@
         display: none;
     }
     .services.services_mobile {
+        margin-top: 4rem;
         display: block;
         padding-left: 2rem;
         width: auto;
