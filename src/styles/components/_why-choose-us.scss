@@ -103,12 +103,6 @@
 
       
     }
-    // костыль для первой иконки(убираю паддинг)
-    &:first-of-type {
-        .why-choose-us__icon {
-            padding: 0 0;
-        }
-      }
     
 
     .why-choose-us__icon-background {
