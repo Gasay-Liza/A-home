@@ -35,7 +35,7 @@
 	height: 100vh;
 	top: 0;
 	left: 0;
-	display: block;
+	display: none;
 	background: rgba(19, 19, 19, 0.24);
     backdrop-filter: blur(10px);
 }
@@ -44,10 +44,6 @@
 .swiper {
     width: 100%;
     max-width: 177rem;
-}
-
-.swiper-slide {
-    // margin-right: 3rem;
 }
 
 .swiper-slide {
