@@ -1,0 +1,172 @@
+.modal {
+  z-index: 11;
+  margin-top: 0;
+  overflow: hidden;
+  border-radius: 4rem;
+  position: absolute;
+  width: 65.9rem;
+  height: auto;
+  max-height: 66.9rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+
+  // .modal_review
+  &_review {
+  }
+
+  // .modal__background
+  &__background {
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__background-mobile{
+    display: none;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    img {
+      width: 100%;
+    }
+  }
+
+  // .modal__close-btn
+  &__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background-color: $white;
+    svg {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+  }
+
+  // .modal__form
+  &__form {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // .modal__title-h2
+  &__title-h2 {
+    @include title-h2($black, $drukcyr);
+  }
+
+  // .modal__input
+  &__input {
+    margin-top: 3.2rem;
+    cursor: default;
+    padding: 1rem 0;
+    background-color: inherit;
+    border-bottom: 0.1rem solid rgba(19, 19, 19, 0.3);
+    width: 100%;
+    &::placeholder {
+      @include block-text(rgba(19, 19, 19, 0.3), $avanti);
+    }
+    @include block-text($black, $avanti);
+  }
+
+  // .modal__textarea
+  &__textarea {
+    margin-top: 3.2rem;
+    cursor: default;
+    padding: 1rem 0;
+    background-color: inherit;
+    border-bottom: 0.1rem solid rgba(19, 19, 19, 0.3);
+    width: 100%;
+    overflow-x: hidden; /* Скрываем горизонтальный скроллбар */
+    overflow-y: auto; /* Показываем вертикальный скроллбар при необходимости */
+    max-height: 25.3rem;
+    &::placeholder {
+      @include block-text(rgba(19, 19, 19, 0.3), $avanti);
+    }
+    @include block-text($black, $avanti);
+  }
+
+  // .modal__sumbit
+  &__sumbit {
+    width: fit-content;
+    margin-top: 4rem;
+    @include btn($white, $l-blue);
+  }
+
+  // .modal__submit-text
+  &__submit-text {
+    @include btn-text($l-blue, $avanti);
+  }
+}
+@media (max-width: 48em) {
+  .modal {
+    width: 71rem;
+    height: auto;
+    max-height: 71.9rem;
+    // .modal__background
+    &__background {
+      display: none;
+    }
+
+    &__background-mobile{
+      display: block;
+    }
+
+    // .modal__close-btn
+    &__close-btn {
+      width: 9.6rem;
+      height: 9.6rem;
+      svg {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+  
+    // .modal__form
+    &__form {
+      padding: 3.2rem;
+    }
+
+  
+    // .modal__input
+    &__input {
+      margin-top: 6.4rem;
+      cursor: default;
+      padding: 2rem 0;
+    }
+  
+    // .modal__textarea
+    &__textarea {
+      margin-top: 6.4rem;
+      cursor: default;
+      padding: 1rem 0;
+      max-height: 64.6rem;
+    }
+  
+    // .modal__sumbit
+    &__sumbit {
+      width: fit-content;
+      margin-top: 8rem;
+    }
+  }
+}

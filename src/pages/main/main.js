@@ -76,4 +76,47 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function(){
+  // Вызов модального окна
+  $('.reviews__btn').click( function() {
+    console.log("fdwef")
+      $('.modal-overlay').fadeIn();
+  });
 
+  // Закрытие окна на крестик
+  $('.modal__close-btn').click( function() {
+      $('.modal-overlay').fadeOut();
+  });
+
+  // Закрытие окна на поле
+  $(document).mouseup( function (e) { 
+      var popup = $('.modal');
+      if (e.target != popup[0] && popup.has(e.target).length === 0){
+          $('.modal-overlay').fadeOut();
+      }
+  });
+
+  // Закрытие окна на нажатие клавиши "Esc"
+  $(document).keydown( function(e) {
+    if (e.keyCode == 27) { // 27 это код клавиши "Esc"
+      $('.modal-overlay').fadeOut();
+    }
+  });
+});
+
+$(document).ready(function(){
+const textarea = document.getElementById('myTextArea');
+  const maxRows = 11; // Максимальное количество строк
+
+  textarea.addEventListener('input', (event) => {
+    const target = event.target;
+    target.style.height = 'auto'; // Сброс предыдущей высоты
+    target.style.height = `${target.scrollHeight}px`; // Устанавливаем новую высоту
+
+    if (target.value.split('\n').length >= maxRows) {
+      textarea.style.overflowY = 'scroll'; // Добавляем скролл, если достигнуто максимальное количество строк
+    } else {
+      textarea.style.overflowY = 'auto'; // Удаляем скролл, если строк меньше максимального значения
+    }
+  });
+});
