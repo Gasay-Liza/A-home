@@ -18,7 +18,7 @@ const entryPoints = {
   "services": path.resolve(__dirname, './src/pages/services/services.js'),
   "detail-services": path.resolve(__dirname, './src/pages/detail-services/detail-services.js'),
   "about": path.resolve(__dirname, './src/pages/about/about.js'),
-  
+  "404": path.resolve(__dirname, './src/pages/404/404.js'),
 
   // Добавьте другие страницы здесь
 };
