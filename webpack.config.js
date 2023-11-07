@@ -14,6 +14,7 @@ const entryPoints = {
   "main": path.resolve(__dirname, './src/pages/main/main.js'),
   "projects": path.resolve(__dirname, './src/pages/projects/projects.js'),
   "detail-project": path.resolve(__dirname, './src/pages/detail-project/detail-project.js'),
+  "detail-article": path.resolve(__dirname, './src/pages/detail-article/detail-article.js'),
   "services": path.resolve(__dirname, './src/pages/services/services.js'),
   "detail-services": path.resolve(__dirname, './src/pages/detail-services/detail-services.js'),
   "about": path.resolve(__dirname, './src/pages/about/about.js'),
