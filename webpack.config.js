@@ -103,11 +103,7 @@ module.exports = {
       },
     ],
   },
-  resolve: {
-    alias: {
-      'inputmask': path.resolve(__dirname, '../node_modules/inputmask/dist/inputmask'),
-    },
-  },
+
   plugins: [
     ...htmlPlugins,
     new MiniCssExtractPlugin({ filename: "src/css/[name].[contenthash].css",}),

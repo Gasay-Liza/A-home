@@ -6,6 +6,7 @@ import $ from "jquery";
 import Swiper from "swiper";
 // import Swiper styles
 import "swiper/swiper-bundle.css";
+import 'jquery-mask-plugin';
 
 // Импортируем необходимые модули для пагинации
 import { Pagination, Navigation } from "swiper/modules";
@@ -128,3 +129,8 @@ $(document).ready(function(){
     }
   });
 });
+$('.footer__input_number').mask("+7(999) 999-99-99");
+// Маска для телефона
+// $(document).ready(function(){
+//  
+// });

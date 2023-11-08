@@ -59,12 +59,15 @@
     background-color: inherit;
     border-bottom: 0.1rem solid rgba(19, 19, 19, 0.3);
     width: 100%;
-    color: rgba(19, 19, 19, 0.3);
+    color: $black;
     font-family: $avanti;
     font-size: 1.8rem;
     font-style: normal;
     font-weight: 400;
     line-height: 130%;
+    &::placeholder{
+      color: rgba(19, 19, 19, 0.3);
+    }
   }
 
   // .footer__btn

@@ -22,6 +22,7 @@
     "core-js": "^3.32.2",
     "inputmask": "^5.0.8",
     "jquery-mask-plugin": "^1.14.16",
+    "jquery.maskedinput": "^1.4.1",
     "regenerator-runtime": "^0.14.0",
     "swiper": "^10.3.1"
   },
